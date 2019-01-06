@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Review on Stuff</title>
+    <link>http://example.org/tags/review/</link>
+    <description>Recent content in Review on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Feb 2016 18:54:38 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Didaktics of media: Learning unit four - Report</title>
+      <link>http://example.org/posts/2016-02-07-didaktics-of-media-learning-unit-four-report/</link>
+      <pubDate>Sun, 07 Feb 2016 18:54:38 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-02-07-didaktics-of-media-learning-unit-four-report/</guid>
+      <description>This blog post is one part of the series “learning diary” for a course at my university.
+Goal of this report is to take and rate a online learning unit. For the fourth and final learning unit we should take a mobile learning unit. I used the app Learning Japanese (Google Play Store) for my mobile phone. As an experiment we have been asked to create a video for the review: https://youtu.</description>
+    </item>
+    
+    <item>
+      <title>YNAB - One year review</title>
+      <link>http://example.org/posts/2015-04-09-ynab-one-year-review/</link>
+      <pubDate>Thu, 09 Apr 2015 15:18:31 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-04-09-ynab-one-year-review/</guid>
+      <description>Tl;dr: YNAB4 is awesome and you should give it a try. I managed my finances!
+How the time flies by! A year ago I installed You Need A Budget 4 as trial on my system. Since then I used the software (or the Android version) everyday. After the trial period I asked the ynab.com for the free student version of their software. After the license key arrived everything worked fine.</description>
+    </item>
+    
+  </channel>
+</rss>

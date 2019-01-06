@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Museology on Stuff</title>
+    <link>http://example.org/tags/museology/</link>
+    <description>Recent content in Museology on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Oct 2012 06:43:39 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/museology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A new project</title>
+      <link>http://example.org/posts/2012-10-09-a-new-project/</link>
+      <pubDate>Tue, 09 Oct 2012 06:43:39 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-09-a-new-project/</guid>
+      <description>Whoohaaa a new project from the university. David and I were assigned to the Computer Museum on the university campus. There we (and six other students) will be responsible to install, customize and deploy a tool called CollectiveAccess (Homepage). CA is a open source tool to register items, tag and mark them and then display them on a front end.
+There were two teams of the terms before us, who already made some analysis, set up server and even made some sleek videos of some of the items.</description>
+    </item>
+    
+  </channel>
+</rss>

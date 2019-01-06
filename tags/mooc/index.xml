@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mooc on Stuff</title>
+    <link>http://example.org/tags/mooc/</link>
+    <description>Recent content in Mooc on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Jan 2016 20:59:50 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/mooc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Didaktics of media: Designing MOOCs</title>
+      <link>http://example.org/posts/2016-01-06-didaktics-of-media-designing-moocs/</link>
+      <pubDate>Wed, 06 Jan 2016 20:59:50 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-06-didaktics-of-media-designing-moocs/</guid>
+      <description>This blog post is one part of the series &amp;ldquo;learning diary&amp;rdquo; for a course at my university.
+Goals: Based on the title for that unit I assume we will learn something about designing MOOC. The linked article on the other hand, features a paper about the Tech Ed Revolution, which &amp;ldquo;will be the Learner Revolution&amp;rdquo;. It goes on and on about investors needing to put money in education (either traditional education or start ups) and how these start ups could fuel the next learning revolution.</description>
+    </item>
+    
+  </channel>
+</rss>

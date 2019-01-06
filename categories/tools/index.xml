@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Stuff</title>
+    <link>http://example.org/categories/tools/</link>
+    <description>Recent content in Tools on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Dec 2015 12:00:31 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Atom.io now works on German keyboards!</title>
+      <link>http://example.org/posts/2015-12-19-atom-io-now-works-on-german-keyboards/</link>
+      <pubDate>Sat, 19 Dec 2015 12:00:31 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-12-19-atom-io-now-works-on-german-keyboards/</guid>
+      <description>Summary: If you have problems with non us-keyboards and the editor Atom.io install this package: keyboard-localization
+Shortly longer: Ok, I blogged about my problems with Atom.io before (and before) and the underlying issues aren&amp;rsquo;t fixed in the chromium parts of Atom.io. Yet there were workarounds: For example I created my own keybinding file, which fixed my most important issue the missing &amp;ldquo;@&amp;rdquo; sign (who is using that, anyway?). Now I needed an working &amp;ldquo;\&amp;rdquo; in my elixir code.</description>
+    </item>
+    
+  </channel>
+</rss>

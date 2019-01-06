@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Stuff</title>
+    <link>http://example.org/tags/home/</link>
+    <description>Recent content in Home on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Sep 2012 20:16:28 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Egg cartons. A lot of them (47 to be precisely)</title>
+      <link>http://example.org/posts/2012-09-10-egg-cartons-a-lot-of-them-47-to-be-precisely/</link>
+      <pubDate>Mon, 10 Sep 2012 20:16:28 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-09-10-egg-cartons-a-lot-of-them-47-to-be-precisely/</guid>
+      <description>Ever wanted to know how egg cartons would look like, if you stack up enough to contain 352 eggs?
+Me neither. Nonetheless, here are the egg cartons we gathered for our band room:
+
+We gathered so many of them to quieten our band room. But now (after we accumulated so many cartons) we canceled the room, because of a raise of the rent.</description>
+    </item>
+    
+  </channel>
+</rss>

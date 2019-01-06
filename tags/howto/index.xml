@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Howto on Stuff</title>
+    <link>http://example.org/tags/howto/</link>
+    <description>Recent content in Howto on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Oct 2012 21:45:21 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/howto/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting up Wifi on Ubuntu 12.04 Server via command line (yeah, finally some technical stuff )</title>
+      <link>http://example.org/posts/2012-10-22-setting-up-wifi-on-ubuntu-12-04-server-via-command-line-yeah-finally-some-technical-stuff/</link>
+      <pubDate>Mon, 22 Oct 2012 21:45:21 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-22-setting-up-wifi-on-ubuntu-12-04-server-via-command-line-yeah-finally-some-technical-stuff/</guid>
+      <description>Problem: Setting up a wireless adapter on Ubuntu server 12.04 LTS via CLI isn&amp;rsquo;t THAT easy. Plug&amp;rsquo;n&amp;rsquo;Play doesn&amp;rsquo;t simply work. Good thing there is Google. And a lot of helpful sites.
+Target: Insert the stick (or boot with it) and connect automaticly to the preferred network
+This is not a tutorial. And it&amp;rsquo;s realy not for the uninitiated. It&amp;rsquo;s more like a short reminder for me, or people who have a basic idea what&amp;rsquo;s happening here&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Visualizing data with Gnuplot</title>
+      <link>http://example.org/posts/2012-02-17-visualizing-data-with-gnuplot/</link>
+      <pubDate>Fri, 17 Feb 2012 20:52:51 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-17-visualizing-data-with-gnuplot/</guid>
+      <description>On my pursuade for a tool to visualize simple list values I found gnuplot:
+from Wikipedia:
+ gnuplot is a command-line program that can generate two- and three-dimensional plots of functions, data, and data fits.
+ I will focus on the capabilities of gnuplot on two-dimensional plots and in special howto visualize data without a corresponding second data value. But first here is the idea why I needed such a tool:</description>
+    </item>
+    
+    <item>
+      <title>How to install HandBrake on Ubuntu 11.10</title>
+      <link>http://example.org/posts/2011-11-03-how-to-install-handbrake-on-ubuntu-11-10/</link>
+      <pubDate>Thu, 03 Nov 2011 09:48:32 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2011-11-03-how-to-install-handbrake-on-ubuntu-11-10/</guid>
+      <description>If not already happened: Install the synaptic package manager (search for synaptic in the Ubuntu software center)
+Download this package according to your architecture. If you are not sure which architecture you need, try amd64 or i386. This are the two most used architectures.
+Install the package by double clicking.
+Open a terminal and execute sudo add-apt-repository ppa:stebbins/handbrake-releases
+Open synaptics package manager, go to preferences / package sources / other software.</description>
+    </item>
+    
+  </channel>
+</rss>

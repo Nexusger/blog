@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ssd on Stuff</title>
+    <link>http://example.org/tags/ssd/</link>
+    <description>Recent content in Ssd on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Nov 2012 23:19:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/ssd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows 7 - HowTo change system HDD to SSD (With built in tools only)</title>
+      <link>http://example.org/posts/2012-11-16-windows-7-howto-change-system-hdd-to-ssd-with-built-in-tools-only/</link>
+      <pubDate>Fri, 16 Nov 2012 23:19:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-11-16-windows-7-howto-change-system-hdd-to-ssd-with-built-in-tools-only/</guid>
+      <description>Ingredients:  Current Laptop or PC New SSD External Harddisk (for backup, so it&amp;rsquo;d better be fast and big) One empty DVD (or the recovery disc) Bunch of screwdrivers  Abstract:  Shrink your HDD partition to a size smaller than the SSD (*) Create a recovery disk Create a system image with Windows backup on the external Harddisk Replace your HDD with the shiny new SSD Boot with recovery disk Choose to restore from a system backup  (*) The first part is realy important.</description>
+    </item>
+    
+  </channel>
+</rss>

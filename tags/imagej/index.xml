@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Imagej on Stuff</title>
+    <link>http://example.org/tags/imagej/</link>
+    <description>Recent content in Imagej on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Jun 2016 10:16:09 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/imagej/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Solved: ImageJ / Fiji error: &#34;IllegalArgumentException: adding a container to a container on a different GraphicsDevice&#34;</title>
+      <link>http://example.org/posts/2016-06-29-solved-imagej-fiji-error-illegalargumentexception-adding-a-container-to-a-container-on-a-different-graphicsdevice/</link>
+      <pubDate>Wed, 29 Jun 2016 10:16:09 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-06-29-solved-imagej-fiji-error-illegalargumentexception-adding-a-container-to-a-container-on-a-different-graphicsdevice/</guid>
+      <description>For my master thesis I am experimenting with ImageJ / Fiji. While working with some image registration algorithms I happend to run in a strange bug I couldn&amp;rsquo;t explain to me:
+(Fiji Is Just) ImageJ 2.0.0-rc-49/1.51c; Java 1.8.0_66 [64-bit]; Windows 10 10.0; 476MB of 9115MB (5%) java.lang.IllegalArgumentException: adding a container to a container on a different GraphicsDevice at java.awt.Component.checkGD(Component.java:1185) at java.awt.Container.addImpl(Container.java:1093) at java.awt.Container.add(Container.java:417) at ij.gui.ImageWindow.add(ImageWindow.java:516) at ij.gui.ImageWindow.&amp;lt;init&amp;gt;(ImageWindow.java:88) at ij.gui.StackWindow.&amp;lt;init&amp;gt;(StackWindow.java:28) at ij.</description>
+    </item>
+    
+  </channel>
+</rss>

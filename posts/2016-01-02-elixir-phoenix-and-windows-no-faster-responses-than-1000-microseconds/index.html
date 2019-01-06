@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" Elixir, Phoenix and Windows: No faster responses than 1000 microseconds? &middot;  Stuff" />
+  
+  <meta property="og:site_name" content="Stuff" />
+  <meta property="og:url" content="http://example.org/posts/2016-01-02-elixir-phoenix-and-windows-no-faster-responses-than-1000-microseconds/" />
+  
+  
+    <meta property="og:type" content="article" />
+    
+    <meta property="og:article:published_time" content="2016-01-02T17:24:56Z" />
+    
+      <meta property="og:article:tag" content="elixir" />
+    
+      <meta property="og:article:tag" content="microseconds" />
+    
+      <meta property="og:article:tag" content="powershell" />
+    
+      <meta property="og:article:tag" content="windows" />
+    
+  
+
+  <title>
+     Elixir, Phoenix and Windows: No faster responses than 1000 microseconds? &middot;  Stuff
+  </title>
+
+  <link rel="alternative stylesheet" href="http://example.org/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/main.css" />
+  <link rel="stylesheet" href="http://example.org/css/github.css" />
+  <link rel="stylesheet" href="http://example.org/css/color-theme.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  <link rel="shortcut icon" href="http://example.org/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://example.org/images/apple-touch-icon.png" />
+
+  
+
+  
+
+  
+</head>
+<body>
+  
+  <header class="global-header"  style="background-image:url(http://example.org/images/bg.jpg)">
+  
+    <section class="header-text">
+      <h1><a href="http://example.org/">Stuff</a></h1>
+      
+      
+        <a class="btn btn-default btn-home" href="http://example.org/">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          &nbsp;Home
+        </a>
+      
+      
+      <div class="navbar-container">
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/me">
+            About me
+          </a>
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/imprint">
+            Imprint
+          </a>
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+
+<article>
+  <header class="article-title">
+    <h1 class="text-primary">Elixir, Phoenix and Windows: No faster responses than 1000 microseconds?</h1>
+  </header>
+  <div class="delimiter"></div>
+  <section>
+    
+
+<p>If you read around phoenix developers you often hear stuff like &ldquo;Awesome, requests served in under xxx microseconds!&rdquo;. Yet if I try the Phoenix framework, I only have this results:</p>
+
+<pre><code>[info] GET /
+[debug] Processing by GettingStartedPheonix.PageController.index/2
+Parameters: %{}
+Pipelines: [:browser]
+[info] Sent 200 in 1000┬Ás
+[info] JOIN rooms:lobby to GettingStartedPheonix.RoomChannel
+Transport: Phoenix.Transports.WebSocket
+Parameters: %{}
+[info] Replied rooms:lobby :ok
+</code></pre>
+
+<p>With special emphasis on [info] Sent 200 in 1000┬Ás . Here we have two problems:</p>
+
+<pre><code>  1. It looks like the command line doesn't know the **μ** sign and replaces it with **┬Á**.
+  2. Did it really take 1000 microseconds to serve the request? I'm not sure, but I NEVER have a request faster than that. Sometimes I have a slower request (163 milliseconds on startup for example) but never faster than 1000 microseconds.
+</code></pre>
+
+<h1 id="locating-the-error-source">Locating the error source</h1>
+
+<p>Lets find the culprit: I use the Powershell to start the Phoenix app. Can Powershell show the <strong>μ</strong> sign?</p>
+
+<p><a href="/images/2016-01-02-elixir-phoenix-and-windows-no-faster-responses-than-1000-microseconds/canPowershellShowMicrosecond.png" title="It can!"><img src="/images/2016-01-02-elixir-phoenix-and-windows-no-faster-responses-than-1000-microseconds/canPowershellShowMicrosecond.png" alt="Powershell using the μ sign" />
+</a></p>
+
+<p><a href="/images/2016-01-02-elixir-phoenix-and-windows-no-faster-responses-than-1000-microseconds/canPowershellShowMicrosecondsYes.png" title="Variables with the μ sign are possible as well"><img src="/images/2016-01-02-elixir-phoenix-and-windows-no-faster-responses-than-1000-microseconds/canPowershellShowMicrosecondsYes.png" alt="Powershell showing off and uses the the μ sign as variable name" />
+</a></p>
+
+<p>As a matter of fact, you can use the <strong>μ</strong> sign as variable, if you want to.</p>
+
+<p>So Powershell is good. What&rsquo;s the problem then? Looking into the mix.ps1 we can see that it executes the mix.bat, which executes the elixir.bat which either executes erl.exe or werl.exe. So lets have a quick look if the cmd (*.bat files are executed by cmd) is capable of the microsecond sign.</p>
+
+<p><a href="/images/2016-01-02-elixir-phoenix-and-windows-no-faster-responses-than-1000-microseconds/evenCmdCanDoIt.png" title="Also the command line can show the sign"><img src="/images/2016-01-02-elixir-phoenix-and-windows-no-faster-responses-than-1000-microseconds/evenCmdCanDoIt.png" alt="Also the command line is can show the sign" />
+</a></p>
+
+<p>So the problem isn&rsquo;t the command line either. I printed the final executed call to erl.exe and executed this command without the cmd as middle man. The problem remained. So I assume it is a problem with either the erl.exe (if I use the &ndash;werl command line switch, werl.exe gets executed, the phoenix app gets started but no info is shown in werl.exe), Elixir, Phoenix or some of the plumbing in between.</p>
+
+<p>Lets test Elixir. I created a new Elixir app mix new micro_second_test  and wrote a single function in it:</p>
+
+<pre><code>def sayMicro do
+  &quot;μ&quot;
+end
+</code></pre>
+
+<p>When starting the application with iex.bat -S mix  and executing the function we get this result:</p>
+
+<pre><code>iex(1)&gt; MicroSecondTest.sayMicro
+&quot;╬╝&quot;
+</code></pre>
+
+<p>So we can rule out Phoenix as Elixir already has that problem. What about erl.exe?</p>
+
+<pre><code>PS C:\Users\Torben&gt; erl.exe
+Eshell V7.2.1  (abort with ^G)
+1&gt; io:fwrite(&quot;μ&quot;).
+µok
+</code></pre>
+
+<p>Erlang can show the <strong>μ</strong> sign. So the culprit is either Elixir or the plumbing. I will open an GitHub Issue for this problem. For the second problem (never showing less than 1000<strong>μs</strong>) I am not sure how to check. I think it could be in the cowboy web server, or in the Plug.Conn. But I have no clue&hellip;</p>
+
+  </section>
+  <div class="clearfix">
+    
+      <div class="post-date pull-left">
+        <span class="small">
+          Posted on
+          Jan 2, 2016 at 17:24
+        </span>
+      </div>
+    
+    <div class="pull-right">
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/elixir/">#Elixir</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/microseconds/">#Microseconds</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/powershell/">#Powershell</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/windows/">#Windows</a></span>
+        
+      
+    </div>
+  </div>
+  <footer>
+    
+      
+    
+    
+    <div class="delimiter"></div>
+    <div class="pager-container">
+      
+        <a class="btn btn-primary btn-older-posts" href="http://example.org/posts/2015-12-21-elixir-catch-of-the-day-parentheses/">
+          <div>
+            <span aria-hidden="true">&larr;</span> Older Posts
+          </div>
+        </a>
+      
+      
+        <a class="btn btn-primary btn-newer-posts" href="http://example.org/posts/2016-01-03-elixir-phoenix-and-windows-some-insights-on-my-1000-problem/">
+          <div>
+            Newer Posts <span aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+      
+    </div>
+  </footer>
+</article>
+<div class="delimiter"></div>
+
+  </main>
+  <footer class="container global-footer">
+    <div class="copyright-note pull-left">
+      
+    </div>
+    <div class="sns-links hidden-print">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  
+  
+  
+  
+</body>
+</html>
+

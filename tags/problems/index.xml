@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Problems on Stuff</title>
+    <link>http://example.org/tags/problems/</link>
+    <description>Recent content in Problems on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Mar 2017 09:40:44 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/problems/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dell XPS 13 9360 - Trackpad Issue</title>
+      <link>http://example.org/posts/2017-03-05-dell-xps-13-9360-trackpad-issue/</link>
+      <pubDate>Sun, 05 Mar 2017 09:40:44 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2017-03-05-dell-xps-13-9360-trackpad-issue/</guid>
+      <description>Summary: My Dell XPS 13 9360 laptop has issues with the touchpad. The Dell support site is the pure horror but the Dell support team via Facebook is fast and helpful.
+Long story: Several days ago the trackpad stopped working. It started when I connected a Apple Magic Mouse for more convenient playing. When I disconnected the mouse, I realized that the trackpad stopped working. Thinking the laptop just swallowed up I restarted the system.</description>
+    </item>
+    
+    <item>
+      <title>Elixir on windows</title>
+      <link>http://example.org/posts/2015-07-03-elixir-on-windows/</link>
+      <pubDate>Fri, 03 Jul 2015 21:23:05 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-07-03-elixir-on-windows/</guid>
+      <description>Lately I got interested in the programming language Elixir. I have not yet done anything besides the very first parts of the tutorial and the fantastic introduction from José Valim. It looks fun and very capable, even if I have to think around the corner (Elixir is functional and I&amp;rsquo;m more used to the object oriented programming paradigma)
+After reading some parts of the tutorial on my daily commute to work, I was exited to start.</description>
+    </item>
+    
+  </channel>
+</rss>

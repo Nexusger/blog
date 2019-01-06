@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Stuff</title>
+    <link>http://example.org/categories/javascript/</link>
+    <description>Recent content in Javascript on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Apr 2012 14:22:59 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Oh noez, Hackerz!!!!</title>
+      <link>http://example.org/posts/2012-04-06-oh-noez-hackerz/</link>
+      <pubDate>Fri, 06 Apr 2012 14:22:59 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-04-06-oh-noez-hackerz/</guid>
+      <description>Today I detected that one of my sites was hacked. Some punks got access to one of my webservers, added some files and altered some other files. Lucky me, on this webserver is php forbidden and they couldn&amp;rsquo;t do any harm.
+But from the start:
+I host the website for one of the local sport clubs. The website is static, showing only some pics, contact and legal stuff. Once a year there I make a short report how the website is doing and what I&amp;rsquo;ve done.</description>
+    </item>
+    
+    <item>
+      <title>Slideshow2 Vertical Alignment</title>
+      <link>http://example.org/posts/2011-09-25-slideshow2-vertical-alignment-2/</link>
+      <pubDate>Sun, 25 Sep 2011 17:56:33 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2011-09-25-slideshow2-vertical-alignment-2/</guid>
+      <description>To update my last post, this solution worked for me:
+On the Slideshow2 homepage is an working example with vertical alignment. So I downloaded exactly this version of the slideshow2.js and the according mootools and tadaa! It works. It seems that the current version simply is not capable of vertical scrolling.
+A single drawback is still there: The option &amp;ldquo;resize&amp;rdquo; doesn&amp;rsquo;t work. But as long as you can live with that, the slideshow2 V1.</description>
+    </item>
+    
+    <item>
+      <title>Slideshow2 - Vertical alignment</title>
+      <link>http://example.org/posts/2011-08-16-slideshow2-vertical-alignment/</link>
+      <pubDate>Tue, 16 Aug 2011 13:17:08 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2011-08-16-slideshow2-vertical-alignment/</guid>
+      <description>I was looking for a javascript gallery plugin for a website I maintain. After I checked two or three plugins (incl. galleria) I decided that Slideshow2 is the tool, I&amp;rsquo;ll use. One of the big points in my decision for Slideshow2 was the simple integration of a vertical thumbnail list. I tried it in galleria as well but failed.
+With Slideshow2 everything went well. Download the package, edit the file like specified and voilá you&amp;rsquo;ve got an vertical thumbnail list.</description>
+    </item>
+    
+  </channel>
+</rss>

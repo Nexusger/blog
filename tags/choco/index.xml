@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Choco on Stuff</title>
+    <link>http://example.org/tags/choco/</link>
+    <description>Recent content in Choco on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Dec 2015 22:11:04 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/choco/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Elixir, Windows and Chocolatey: Updates</title>
+      <link>http://example.org/posts/2015-12-03-elixir-windows-and-chocolatey-updates/</link>
+      <pubDate>Thu, 03 Dec 2015 22:11:04 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-12-03-elixir-windows-and-chocolatey-updates/</guid>
+      <description>Recently I ran in a problem with Elixir on Windows, installed via Chocolatey:
+After an update of the Elixir package:
+choco upgrade elixir  (or a Windows update or something similar) I couldn&amp;rsquo;t use iex.bat anymore. Every time I tried to open iex.bat I got an crash_dump:
+{error_logger,{{2015,12,3},{22,35,15}},crash_report,[[{initial_call,{supervisor_bridge,user_sup,[&#39;Argument__1&#39;]}},{pid,&amp;lt;0.22.0&amp;gt;},{registered_name,[]},{error_info,...  (That said, mix still worked&amp;hellip;)
+After several attempts on reinstalling Elixir (and Erlang, just to be sure) I found this comment on the Elixir package on Chocolatey.</description>
+    </item>
+    
+  </channel>
+</rss>

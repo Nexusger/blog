@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Commandline on Stuff</title>
+    <link>http://example.org/categories/commandline/</link>
+    <description>Recent content in Commandline on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Jan 2016 10:56:14 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/commandline/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ZLocation</title>
+      <link>http://example.org/posts/2016-01-20-zlocation/</link>
+      <pubDate>Wed, 20 Jan 2016 10:56:14 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-20-zlocation/</guid>
+      <description>ZLocation (&amp;ldquo;A cd that learns&amp;rdquo;) is a PowerShell module for better navigating through folders.
+I used the predecessor for a while and was fed up with corrupted database entries. I&amp;rsquo;ll test ZLocation thorough-fully but try it for your self!</description>
+    </item>
+    
+    <item>
+      <title>Powershell cmdlets with dynamic param AND $args don&#39;t work</title>
+      <link>http://example.org/posts/2016-01-07-powershell-cmdlets-with-dynamic-param-and-args-dont-work/</link>
+      <pubDate>Thu, 07 Jan 2016 10:11:44 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-07-powershell-cmdlets-with-dynamic-param-and-args-dont-work/</guid>
+      <description>Over the weekend I tried to implement auto completion in Elixir&amp;rsquo;s mix (in Windows). Unfortunately I didn&amp;rsquo;t make it without introducing some problems. So I didn&amp;rsquo;t committed my changes to upstream. Currently I try to reach some of the more renowned Elixir/Windows contributors, to discuss the changes .
+Motivation Under normal circumstances I don&amp;rsquo;t use more mix tasks then test, phoenix.server and release but sometimes you need this weird command, you just can&amp;rsquo;t remember.</description>
+    </item>
+    
+    <item>
+      <title>Elixir, Phoenix and Windows: Some insights on my 1000┬Ás problem</title>
+      <link>http://example.org/posts/2016-01-03-elixir-phoenix-and-windows-some-insights-on-my-1000-problem/</link>
+      <pubDate>Sun, 03 Jan 2016 18:30:03 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-03-elixir-phoenix-and-windows-some-insights-on-my-1000-problem/</guid>
+      <description>On Saturday I wrote about &amp;ldquo;Elixir, Phoenix and Windows: No faster responses than 1000 microseconds?&amp;rdquo;. I described two problems I had with Phoenix in Windows: My response times seem to be stuck at 1000 microseconds and Powershell couldn&amp;rsquo;t display the μ sign. I dug into some code and the mailing lists and found (with a lot of help) some answers.
+1000 Microseconds on Windows? The response times in Phoenix are often measured in Microseconds.</description>
+    </item>
+    
+    <item>
+      <title>Elixir on Raspberry Pi 2 (using Windows)</title>
+      <link>http://example.org/posts/2015-12-20-elixir-on-raspberry-pi-2-using-windows/</link>
+      <pubDate>Sun, 20 Dec 2015 21:05:41 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-12-20-elixir-on-raspberry-pi-2-using-windows/</guid>
+      <description>Goal Deploy an example Elixir application with the Nerves-Project to a Raspberry Pi 2, using an Ubuntu guest in VMware Player on a Windows host.
+Synopsis We are using the Nerves-project, buildroot and Ubuntu in a virtual machine to create a SD-Image, which contains the default application, blinky.
+Motivation After seeing this talk from Garth Hitchens on Embedded Elixir in Action I wanted to try the Nerves project to deploy an Elixir application to my Raspberry Pi 2.</description>
+    </item>
+    
+    <item>
+      <title>Elixir, Windows and Chocolatey: Updates</title>
+      <link>http://example.org/posts/2015-12-03-elixir-windows-and-chocolatey-updates/</link>
+      <pubDate>Thu, 03 Dec 2015 22:11:04 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-12-03-elixir-windows-and-chocolatey-updates/</guid>
+      <description>Recently I ran in a problem with Elixir on Windows, installed via Chocolatey:
+After an update of the Elixir package:
+choco upgrade elixir  (or a Windows update or something similar) I couldn&amp;rsquo;t use iex.bat anymore. Every time I tried to open iex.bat I got an crash_dump:
+{error_logger,{{2015,12,3},{22,35,15}},crash_report,[[{initial_call,{supervisor_bridge,user_sup,[&#39;Argument__1&#39;]}},{pid,&amp;lt;0.22.0&amp;gt;},{registered_name,[]},{error_info,...  (That said, mix still worked&amp;hellip;)
+After several attempts on reinstalling Elixir (and Erlang, just to be sure) I found this comment on the Elixir package on Chocolatey.</description>
+    </item>
+    
+    <item>
+      <title>Elixir, postgres and chocolatey</title>
+      <link>http://example.org/posts/2015-10-30-elixir-postgres-and-chocolatey/</link>
+      <pubDate>Fri, 30 Oct 2015 11:00:47 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-10-30-elixir-postgres-and-chocolatey/</guid>
+      <description>You try to use the phoenix getting started guide on windows and the task &amp;ldquo;mix ecto.create&amp;rdquo; fails with an useless error? Chances are your postgresql database isn&amp;rsquo;t available with the ecto default credentials &amp;ldquo;postgres&amp;rdquo;:&amp;ldquo;postgres&amp;rdquo;. Try to logon to the database with the credentials &amp;ldquo;postgres&amp;rdquo;:&amp;ldquo;Postgres1234&amp;rdquo; and change the password for the user to &amp;ldquo;postgres&amp;rdquo;. Also, don&amp;rsquo;t forget to change the password of the Windows user &amp;ldquo;postgres&amp;rdquo;.
+Update 15.11.2015: You also have to change the logon information for the service, otherwise postgresql won&amp;rsquo;t start after an restart.</description>
+    </item>
+    
+    <item>
+      <title>Flashing my Samsung Galaxy SIII</title>
+      <link>http://example.org/posts/2013-08-08-flashing-my-samsung-galaxy-siii/</link>
+      <pubDate>Thu, 08 Aug 2013 18:35:22 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2013-08-08-flashing-my-samsung-galaxy-siii/</guid>
+      <description>Today I decided to flash my Samsung Galaxy SIII
+I couldn&amp;rsquo;t bear the badly written &amp;ldquo;improvements&amp;rdquo; which Samsung generously added to the Android anymore. My last smartphone, a now retired HTC Desire gained much out of the Cyanogen Custom Rom, therefore I gave it a try.
+Setup: I have a Samsung Galaxy SIII (Intl) - i9300 from O2, a german mobilephone provider. My Laptop runs Windows 7 and for guidiance I use the official cyanogen Wiki for my phone.</description>
+    </item>
+    
+    <item>
+      <title>Setting up Wifi on Ubuntu 12.04 Server via command line (yeah, finally some technical stuff )</title>
+      <link>http://example.org/posts/2012-10-22-setting-up-wifi-on-ubuntu-12-04-server-via-command-line-yeah-finally-some-technical-stuff/</link>
+      <pubDate>Mon, 22 Oct 2012 21:45:21 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-22-setting-up-wifi-on-ubuntu-12-04-server-via-command-line-yeah-finally-some-technical-stuff/</guid>
+      <description>Problem: Setting up a wireless adapter on Ubuntu server 12.04 LTS via CLI isn&amp;rsquo;t THAT easy. Plug&amp;rsquo;n&amp;rsquo;Play doesn&amp;rsquo;t simply work. Good thing there is Google. And a lot of helpful sites.
+Target: Insert the stick (or boot with it) and connect automaticly to the preferred network
+This is not a tutorial. And it&amp;rsquo;s realy not for the uninitiated. It&amp;rsquo;s more like a short reminder for me, or people who have a basic idea what&amp;rsquo;s happening here&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Visualizing data with Gnuplot</title>
+      <link>http://example.org/posts/2012-02-17-visualizing-data-with-gnuplot/</link>
+      <pubDate>Fri, 17 Feb 2012 20:52:51 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-17-visualizing-data-with-gnuplot/</guid>
+      <description>On my pursuade for a tool to visualize simple list values I found gnuplot:
+from Wikipedia:
+ gnuplot is a command-line program that can generate two- and three-dimensional plots of functions, data, and data fits.
+ I will focus on the capabilities of gnuplot on two-dimensional plots and in special howto visualize data without a corresponding second data value. But first here is the idea why I needed such a tool:</description>
+    </item>
+    
+    <item>
+      <title>KSH the second</title>
+      <link>http://example.org/posts/2012-02-17-ksh-the-second/</link>
+      <pubDate>Fri, 17 Feb 2012 16:37:24 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-17-ksh-the-second/</guid>
+      <description>Woe unto me! Earlier this day I debugged a korn shell script and were not able to find the culprit. With debugging mode
+set -x  I was able to identify, that one of my variables were actualy not recognized as such. After a little bit of tearing my hair out I finaly found the little scallywag:
+I had inserted an unnecessary space between the variable name and the equal-sign. Therefore the interpreter didn&amp;rsquo;t understand what I wanted him to do.</description>
+    </item>
+    
+    <item>
+      <title>KSH basics</title>
+      <link>http://example.org/posts/2012-02-16-ksh-basics/</link>
+      <pubDate>Thu, 16 Feb 2012 22:19:40 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-16-ksh-basics/</guid>
+      <description>Just for the guys who keep forgetting about the simplest commands in korn shell (like me&amp;hellip;) www.well.ox.ac.uk/~johnb/comp/unix/ksh.html</description>
+    </item>
+    
+  </channel>
+</rss>

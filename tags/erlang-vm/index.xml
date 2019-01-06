@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Erlang Vm on Stuff</title>
+    <link>http://example.org/tags/erlang-vm/</link>
+    <description>Recent content in Erlang Vm on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Jan 2016 18:30:03 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/erlang-vm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Elixir, Phoenix and Windows: Some insights on my 1000┬Ás problem</title>
+      <link>http://example.org/posts/2016-01-03-elixir-phoenix-and-windows-some-insights-on-my-1000-problem/</link>
+      <pubDate>Sun, 03 Jan 2016 18:30:03 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-03-elixir-phoenix-and-windows-some-insights-on-my-1000-problem/</guid>
+      <description>On Saturday I wrote about &amp;ldquo;Elixir, Phoenix and Windows: No faster responses than 1000 microseconds?&amp;rdquo;. I described two problems I had with Phoenix in Windows: My response times seem to be stuck at 1000 microseconds and Powershell couldn&amp;rsquo;t display the μ sign. I dug into some code and the mailing lists and found (with a lot of help) some answers.
+1000 Microseconds on Windows? The response times in Phoenix are often measured in Microseconds.</description>
+    </item>
+    
+  </channel>
+</rss>

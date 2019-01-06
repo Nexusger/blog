@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microseconds on Stuff</title>
+    <link>http://example.org/tags/microseconds/</link>
+    <description>Recent content in Microseconds on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Jan 2016 17:24:56 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/microseconds/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Elixir, Phoenix and Windows: No faster responses than 1000 microseconds?</title>
+      <link>http://example.org/posts/2016-01-02-elixir-phoenix-and-windows-no-faster-responses-than-1000-microseconds/</link>
+      <pubDate>Sat, 02 Jan 2016 17:24:56 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-02-elixir-phoenix-and-windows-no-faster-responses-than-1000-microseconds/</guid>
+      <description>If you read around phoenix developers you often hear stuff like &amp;ldquo;Awesome, requests served in under xxx microseconds!&amp;rdquo;. Yet if I try the Phoenix framework, I only have this results:
+[info] GET / [debug] Processing by GettingStartedPheonix.PageController.index/2 Parameters: %{} Pipelines: [:browser] [info] Sent 200 in 1000┬Ás [info] JOIN rooms:lobby to GettingStartedPheonix.RoomChannel Transport: Phoenix.Transports.WebSocket Parameters: %{} [info] Replied rooms:lobby :ok  With special emphasis on [info] Sent 200 in 1000┬Ás .</description>
+    </item>
+    
+  </channel>
+</rss>

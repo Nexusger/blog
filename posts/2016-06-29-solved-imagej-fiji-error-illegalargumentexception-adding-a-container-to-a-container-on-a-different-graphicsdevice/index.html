@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" Solved: ImageJ / Fiji error: &#34;IllegalArgumentException: adding a container to a container on a different GraphicsDevice&#34; &middot;  Stuff" />
+  
+  <meta property="og:site_name" content="Stuff" />
+  <meta property="og:url" content="http://example.org/posts/2016-06-29-solved-imagej-fiji-error-illegalargumentexception-adding-a-container-to-a-container-on-a-different-graphicsdevice/" />
+  
+  
+    <meta property="og:type" content="article" />
+    
+    <meta property="og:article:published_time" content="2016-06-29T10:16:09Z" />
+    
+      <meta property="og:article:tag" content="Bugs" />
+    
+      <meta property="og:article:tag" content="Fiji" />
+    
+      <meta property="og:article:tag" content="ImageJ" />
+    
+      <meta property="og:article:tag" content="Solved" />
+    
+  
+
+  <title>
+     Solved: ImageJ / Fiji error: &#34;IllegalArgumentException: adding a container to a container on a different GraphicsDevice&#34; &middot;  Stuff
+  </title>
+
+  <link rel="alternative stylesheet" href="http://example.org/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/main.css" />
+  <link rel="stylesheet" href="http://example.org/css/github.css" />
+  <link rel="stylesheet" href="http://example.org/css/color-theme.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  <link rel="shortcut icon" href="http://example.org/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://example.org/images/apple-touch-icon.png" />
+
+  
+
+  
+
+  
+</head>
+<body>
+  
+  <header class="global-header"  style="background-image:url(http://example.org/images/bg.jpg)">
+  
+    <section class="header-text">
+      <h1><a href="http://example.org/">Stuff</a></h1>
+      
+      
+        <a class="btn btn-default btn-home" href="http://example.org/">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          &nbsp;Home
+        </a>
+      
+      
+      <div class="navbar-container">
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/me">
+            About me
+          </a>
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/imprint">
+            Imprint
+          </a>
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+
+<article>
+  <header class="article-title">
+    <h1 class="text-primary">Solved: ImageJ / Fiji error: &#34;IllegalArgumentException: adding a container to a container on a different GraphicsDevice&#34;</h1>
+  </header>
+  <div class="delimiter"></div>
+  <section>
+    
+
+<p>For my master thesis I am experimenting with <a href="http://imagej.net/Welcome">ImageJ</a> / <a href="http://fiji.sc/">Fiji</a>. While working with some image registration algorithms I happend to run in a strange bug I couldn&rsquo;t explain to me:</p>
+
+<pre><code>(Fiji Is Just) ImageJ 2.0.0-rc-49/1.51c; Java 1.8.0_66 [64-bit]; Windows 10 10.0; 476MB of 9115MB (5%)
+
+java.lang.IllegalArgumentException: adding a container to a container on a different GraphicsDevice
+    at java.awt.Component.checkGD(Component.java:1185)
+    at java.awt.Container.addImpl(Container.java:1093)
+    at java.awt.Container.add(Container.java:417)
+    at ij.gui.ImageWindow.add(ImageWindow.java:516)
+    at ij.gui.ImageWindow.&lt;init&gt;(ImageWindow.java:88)
+    at ij.gui.StackWindow.&lt;init&gt;(StackWindow.java:28)
+    at ij.ImagePlus.setStack(ImagePlus.java:673)
+    at SIFT_Align.run(SIFT_Align.java:378)
+    at ij.IJ.runUserPlugIn(IJ.java:216)
+    at ij.IJ.runPlugIn(IJ.java:180)
+    at ij.Executer.runCommand(Executer.java:137)
+    at ij.Executer.run(Executer.java:66)
+    at java.lang.Thread.run(Thread.java:745)
+</code></pre>
+
+<h2 id="workaround-fix">Workaround / Fix:</h2>
+
+<p>If you happen to have this bug make sure all instances of ImageJ / Fiji windows are on the same monitor. This bug only occured to me when my Fiji toolbar window was on my main monitor and the plugin windows (Image Sequence loader and Linear Stack Allignment with SIFT) were on my secondary screen.</p>
+
+<h2 id="reproduce">Reproduce:</h2>
+
+<p>If you want to reproduce this issue, use a system with the above mentioned spec (see stacktrace).</p>
+
+<ol>
+<li>Open Fiji on the main display</li>
+<li>Use &ldquo;File / Import / Image Sequence&hellip;&rdquo; to load at least two images</li>
+<li>Execute &ldquo;Plugin / Registration / Linear Stack Allignment with SIFT&rdquo; on the images</li>
+<li>When the registration is performed, move all Fiji windows but the Fiji toolbar to a second display</li>
+<li>Close all the Fiji windows but keep the Fiji toolbar open</li>
+<li>Repeat step 2) and 3)</li>
+<li>Exception gets thrown</li>
+</ol>
+
+<h2 id="resources">Resources:</h2>
+
+<p><a href="http://forum.imagej.net/t/add-slice-to-stack-throws-exception/96">Related bug in the ImageJ forum</a></p>
+
+<p><a href="http://bugs.java.com/view_bug.do?bug_id=8003398">Bug on the Oracle bug tracker</a></p>
+
+  </section>
+  <div class="clearfix">
+    
+      <div class="post-date pull-left">
+        <span class="small">
+          Posted on
+          Jun 29, 2016 at 10:16
+        </span>
+      </div>
+    
+    <div class="pull-right">
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/bugs/">#Bugs</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/fiji/">#Fiji</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/imagej/">#Imagej</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/solved/">#Solved</a></span>
+        
+      
+    </div>
+  </div>
+  <footer>
+    
+      
+    
+    
+    <div class="delimiter"></div>
+    <div class="pager-container">
+      
+        <a class="btn btn-primary btn-older-posts" href="http://example.org/posts/2016-02-16-didaktics-of-media-learning-environment-recap/">
+          <div>
+            <span aria-hidden="true">&larr;</span> Older Posts
+          </div>
+        </a>
+      
+      
+        <a class="btn btn-primary btn-newer-posts" href="http://example.org/posts/2016-12-19-is-this-thing-dead-yet/">
+          <div>
+            Newer Posts <span aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+      
+    </div>
+  </footer>
+</article>
+<div class="delimiter"></div>
+
+  </main>
+  <footer class="container global-footer">
+    <div class="copyright-note pull-left">
+      
+    </div>
+    <div class="sns-links hidden-print">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  
+  
+  
+  
+</body>
+</html>
+

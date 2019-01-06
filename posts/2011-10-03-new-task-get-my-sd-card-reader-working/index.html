@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" New task: Get my sd-card reader working... &middot;  Stuff" />
+  
+  <meta property="og:site_name" content="Stuff" />
+  <meta property="og:url" content="http://example.org/posts/2011-10-03-new-task-get-my-sd-card-reader-working/" />
+  
+  
+    <meta property="og:type" content="article" />
+    
+    <meta property="og:article:published_time" content="2011-10-03T13:03:18Z" />
+    
+      <meta property="og:article:tag" content="Lenovo IdeaPad Z370" />
+    
+      <meta property="og:article:tag" content="sd-card" />
+    
+      <meta property="og:article:tag" content="Ubuntu" />
+    
+  
+
+  <title>
+     New task: Get my sd-card reader working... &middot;  Stuff
+  </title>
+
+  <link rel="alternative stylesheet" href="http://example.org/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/main.css" />
+  <link rel="stylesheet" href="http://example.org/css/github.css" />
+  <link rel="stylesheet" href="http://example.org/css/color-theme.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  <link rel="shortcut icon" href="http://example.org/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://example.org/images/apple-touch-icon.png" />
+
+  
+
+  
+
+  
+</head>
+<body>
+  
+  <header class="global-header"  style="background-image:url(http://example.org/images/bg.jpg)">
+  
+    <section class="header-text">
+      <h1><a href="http://example.org/">Stuff</a></h1>
+      
+      
+        <a class="btn btn-default btn-home" href="http://example.org/">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          &nbsp;Home
+        </a>
+      
+      
+      <div class="navbar-container">
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/me">
+            About me
+          </a>
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/imprint">
+            Imprint
+          </a>
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+
+<article>
+  <header class="article-title">
+    <h1 class="text-primary">New task: Get my sd-card reader working...</h1>
+  </header>
+  <div class="delimiter"></div>
+  <section>
+    <p>New task of the day: Get my sd-card reader in my laptop working. My Lenovo IdeaPad is nice and everything but sometimes there are some annoying things. Like a not working sd-card reader. There absolut no reaction on Ubuntu if I insert a sd-card&hellip; Maybe, I will find out :-)</p>
+
+<p><strong>Update:</strong>
+<code>rmmod ehci_hcd</code> doesn&rsquo;t work
+<code>echo &quot;usb-storage&quot; &gt;&gt; /etc/modules; modprobe usb-storage</code> was promising, but doesn&rsquo;t work either</p>
+
+<p>What do I know? My laptop has a &ldquo;Realtek Semiconductor Corp.&rdquo; sd-card reader.
+If I insert an sd-card, <code>dmesg</code> will show</p>
+
+<pre><code>usb 1-1.3: USB disconnected, address 8
+usb 1-1.3: new high speed USB device using ehci_hcd and address 9 
+</code></pre>
+
+<p><strong>Update:</strong></p>
+
+<p>Wohoo, 11.10 fixes this problem! I&rsquo;m able to use sd-cards! Not that I realy use them, but it&rsquo;s nice to know, I could</p>
+
+  </section>
+  <div class="clearfix">
+    
+      <div class="post-date pull-left">
+        <span class="small">
+          Posted on
+          Oct 3, 2011 at 13:03
+        </span>
+      </div>
+    
+    <div class="pull-right">
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/lenovo-ideapad-z370/">#Lenovo Ideapad Z370</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/sd-card/">#Sd Card</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/ubuntu/">#Ubuntu</a></span>
+        
+      
+    </div>
+  </div>
+  <footer>
+    
+      
+    
+    
+    <div class="delimiter"></div>
+    <div class="pager-container">
+      
+        <a class="btn btn-primary btn-older-posts" href="http://example.org/posts/2011-09-25-slideshow2-vertical-alignment-2/">
+          <div>
+            <span aria-hidden="true">&larr;</span> Older Posts
+          </div>
+        </a>
+      
+      
+        <a class="btn btn-primary btn-newer-posts" href="http://example.org/posts/2011-10-18-keyboard-cant-emulate-rawmode-for-keycode-240/">
+          <div>
+            Newer Posts <span aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+      
+    </div>
+  </footer>
+</article>
+<div class="delimiter"></div>
+
+  </main>
+  <footer class="container global-footer">
+    <div class="copyright-note pull-left">
+      
+    </div>
+    <div class="sns-links hidden-print">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  
+  
+  
+  
+</body>
+</html>
+

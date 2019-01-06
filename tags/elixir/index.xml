@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elixir on Stuff</title>
+    <link>http://example.org/tags/elixir/</link>
+    <description>Recent content in Elixir on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Jan 2016 16:53:59 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/elixir/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Elixir for aspiring Erlang developers</title>
+      <link>http://example.org/posts/2016-01-19-elixir-for-aspiring-erlang-developers/</link>
+      <pubDate>Tue, 19 Jan 2016 16:53:59 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-19-elixir-for-aspiring-erlang-developers/</guid>
+      <description>For the &amp;ldquo;Independent Coursework&amp;rdquo; of the University of Applied Sciences Berlin I created the following presentation:
+**Elixir for aspiring Erlang developers ** from Torben Dohrn
+Target audience are students of the bachelors degree Computer Science of the University.
+If anything is unclear (or god forbid, wrong) drop me a mail or a tweet</description>
+    </item>
+    
+    <item>
+      <title>Powershell cmdlets with dynamic param AND $args don&#39;t work</title>
+      <link>http://example.org/posts/2016-01-07-powershell-cmdlets-with-dynamic-param-and-args-dont-work/</link>
+      <pubDate>Thu, 07 Jan 2016 10:11:44 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-07-powershell-cmdlets-with-dynamic-param-and-args-dont-work/</guid>
+      <description>Over the weekend I tried to implement auto completion in Elixir&amp;rsquo;s mix (in Windows). Unfortunately I didn&amp;rsquo;t make it without introducing some problems. So I didn&amp;rsquo;t committed my changes to upstream. Currently I try to reach some of the more renowned Elixir/Windows contributors, to discuss the changes .
+Motivation Under normal circumstances I don&amp;rsquo;t use more mix tasks then test, phoenix.server and release but sometimes you need this weird command, you just can&amp;rsquo;t remember.</description>
+    </item>
+    
+    <item>
+      <title>Elixir, Phoenix and Windows: Some insights on my 1000┬Ás problem</title>
+      <link>http://example.org/posts/2016-01-03-elixir-phoenix-and-windows-some-insights-on-my-1000-problem/</link>
+      <pubDate>Sun, 03 Jan 2016 18:30:03 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-03-elixir-phoenix-and-windows-some-insights-on-my-1000-problem/</guid>
+      <description>On Saturday I wrote about &amp;ldquo;Elixir, Phoenix and Windows: No faster responses than 1000 microseconds?&amp;rdquo;. I described two problems I had with Phoenix in Windows: My response times seem to be stuck at 1000 microseconds and Powershell couldn&amp;rsquo;t display the μ sign. I dug into some code and the mailing lists and found (with a lot of help) some answers.
+1000 Microseconds on Windows? The response times in Phoenix are often measured in Microseconds.</description>
+    </item>
+    
+    <item>
+      <title>Elixir, Phoenix and Windows: No faster responses than 1000 microseconds?</title>
+      <link>http://example.org/posts/2016-01-02-elixir-phoenix-and-windows-no-faster-responses-than-1000-microseconds/</link>
+      <pubDate>Sat, 02 Jan 2016 17:24:56 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-02-elixir-phoenix-and-windows-no-faster-responses-than-1000-microseconds/</guid>
+      <description>If you read around phoenix developers you often hear stuff like &amp;ldquo;Awesome, requests served in under xxx microseconds!&amp;rdquo;. Yet if I try the Phoenix framework, I only have this results:
+[info] GET / [debug] Processing by GettingStartedPheonix.PageController.index/2 Parameters: %{} Pipelines: [:browser] [info] Sent 200 in 1000┬Ás [info] JOIN rooms:lobby to GettingStartedPheonix.RoomChannel Transport: Phoenix.Transports.WebSocket Parameters: %{} [info] Replied rooms:lobby :ok  With special emphasis on [info] Sent 200 in 1000┬Ás .</description>
+    </item>
+    
+    <item>
+      <title>Elixir, postgres and chocolatey</title>
+      <link>http://example.org/posts/2015-10-30-elixir-postgres-and-chocolatey/</link>
+      <pubDate>Fri, 30 Oct 2015 11:00:47 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-10-30-elixir-postgres-and-chocolatey/</guid>
+      <description>You try to use the phoenix getting started guide on windows and the task &amp;ldquo;mix ecto.create&amp;rdquo; fails with an useless error? Chances are your postgresql database isn&amp;rsquo;t available with the ecto default credentials &amp;ldquo;postgres&amp;rdquo;:&amp;ldquo;postgres&amp;rdquo;. Try to logon to the database with the credentials &amp;ldquo;postgres&amp;rdquo;:&amp;ldquo;Postgres1234&amp;rdquo; and change the password for the user to &amp;ldquo;postgres&amp;rdquo;. Also, don&amp;rsquo;t forget to change the password of the Windows user &amp;ldquo;postgres&amp;rdquo;.
+Update 15.11.2015: You also have to change the logon information for the service, otherwise postgresql won&amp;rsquo;t start after an restart.</description>
+    </item>
+    
+  </channel>
+</rss>

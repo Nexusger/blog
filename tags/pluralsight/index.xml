@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pluralsight on Stuff</title>
+    <link>http://example.org/tags/pluralsight/</link>
+    <description>Recent content in Pluralsight on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Dec 2015 09:04:58 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/pluralsight/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Didaktics of media: Learning unit two - Report</title>
+      <link>http://example.org/posts/2015-12-17-didaktics-of-media-learning-unit-two-report/</link>
+      <pubDate>Thu, 17 Dec 2015 09:04:58 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-12-17-didaktics-of-media-learning-unit-two-report/</guid>
+      <description>This blog post is one part of the series &amp;ldquo;learning diary&amp;rdquo; for a course at my university.
+Goal of this report is to take and rate a online learning unit. For the second learning unit we should take a video based course. I watched a course on the platform http://pluralsight.com.
+Short synopsis of the unit: The course “Building Highly Scalable Web Applications in Azure” is a video based course on the platform http://pluralsight.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mies Van Der Rohe on Stuff</title>
+    <link>http://example.org/tags/mies-van-der-rohe/</link>
+    <description>Recent content in Mies Van Der Rohe on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Mar 2015 22:45:27 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/mies-van-der-rohe/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Barcelona, day two: Montjuic and El barri gothic</title>
+      <link>http://example.org/posts/2015-03-17-barcelona-day-two-montjuic-and-el-barri-gothic/</link>
+      <pubDate>Tue, 17 Mar 2015 22:45:27 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-03-17-barcelona-day-two-montjuic-and-el-barri-gothic/</guid>
+      <description>The second day of our holiday started relaxed: We slept till 11 AM and had a long breakfast with cereals and toast. Interestingly enough the milk you can buy here in the supermarket gets sold uncooled. This seemed a littel bit odd to me, because in Germany almost all milk is getting sold cooled. The only milk in Germany you can buy uncooled is UHT-milk. So I assume the milk is kinda prepared as well.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" Visualizing data with Gnuplot &middot;  Stuff" />
+  
+  <meta property="og:site_name" content="Stuff" />
+  <meta property="og:url" content="http://example.org/posts/2012-02-17-visualizing-data-with-gnuplot/" />
+  
+  
+    <meta property="og:type" content="article" />
+    
+    <meta property="og:article:published_time" content="2012-02-17T20:52:51Z" />
+    
+      <meta property="og:article:tag" content="gnuplot" />
+    
+      <meta property="og:article:tag" content="howto" />
+    
+      <meta property="og:article:tag" content="tutorial" />
+    
+  
+
+  <title>
+     Visualizing data with Gnuplot &middot;  Stuff
+  </title>
+
+  <link rel="alternative stylesheet" href="http://example.org/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/main.css" />
+  <link rel="stylesheet" href="http://example.org/css/github.css" />
+  <link rel="stylesheet" href="http://example.org/css/color-theme.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  <link rel="shortcut icon" href="http://example.org/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://example.org/images/apple-touch-icon.png" />
+
+  
+
+  
+
+  
+</head>
+<body>
+  
+  <header class="global-header"  style="background-image:url(http://example.org/images/bg.jpg)">
+  
+    <section class="header-text">
+      <h1><a href="http://example.org/">Stuff</a></h1>
+      
+      
+        <a class="btn btn-default btn-home" href="http://example.org/">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          &nbsp;Home
+        </a>
+      
+      
+      <div class="navbar-container">
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/me">
+            About me
+          </a>
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/imprint">
+            Imprint
+          </a>
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+
+<article>
+  <header class="article-title">
+    <h1 class="text-primary">Visualizing data with Gnuplot</h1>
+  </header>
+  <div class="delimiter"></div>
+  <section>
+    <p>On my pursuade for a tool to visualize simple list values I found <a href="http://www.gnuplot.info/">gnuplot</a>:</p>
+
+<p>from Wikipedia:</p>
+
+<blockquote>
+<p><strong>gnuplot</strong> is a command-line program that can generate two- and three-dimensional plots of functions, data, and data fits.</p>
+</blockquote>
+
+<p>I will focus on the capabilities of gnuplot on two-dimensional plots and in special howto visualize data without a corresponding second data value. But first here is the idea why I needed such a tool:</p>
+
+<!-- more -->
+
+<p>For one of my next posts I gather battery stats, in special the milliwatts of my laptop battery before and after some tweaks. I gather the stats in a simple file, one line one value. So, basically I already have all the data and I could simply present them. But pure data is considered as boring (what is true) and on top of that a picture paints a thousend words.</p>
+
+<p>I could have simply paste the data into a LibreOffice Spreadsheed and create a diagram but that would be
+a) to easy and
+b) not realy feasible to do in a script</p>
+
+<p>So I searched the internet for a free tool for this task. And found gnuplot. Gnuplot is very easy to install on an Ubuntu system (just check your synaptic or the software center) and needs zero configuration on the first hand. (<a href="http://www.gnuplot.info/download.html">Download for all other OS</a>)</p>
+
+<p>To create your first plot from a data file (<a href="/images/2012-02-17-visualizing-data-with-gnuplot/fibonacci.csv">fibonacci</a>) you have to start gnuplot on the terminal with</p>
+
+<pre><code>gnuplot
+</code></pre>
+
+<p>you will get a window with the following output:</p>
+
+<pre><code>gnuplot&gt;
+</code></pre>
+
+<p>now you could start with the plot right away, but we will set some configurations first hand:</p>
+
+<pre><code>row=-11
+set yrange[-55:55]
+set xrange[-10:10]
+set term png size 800,600
+set output &quot;file.png&quot;
+set grid
+plot &quot;fibonacci.csv&quot; using (row,row=row+1):1 title 'Fibonacci' with lines
+</code></pre>
+
+<p>this should give a picture like this:</p>
+
+<p><a href="/images/2012-02-17-visualizing-data-with-gnuplot/datei.png"><img src="/images/2012-02-17-visualizing-data-with-gnuplot/datei-300x225.png" alt="" />
+</a></p>
+
+<p>What did all the lines of code mean?</p>
+
+<pre><code>set yrange[-55:55]
+</code></pre>
+
+<p>set the range of the y-axis from -55 (at the bottom) to 55 (at the top). xrange works similar but for the x-axis. If yrange[] and/or xrange[] is not given, gnuplot assumes fitting values.</p>
+
+<pre><code>set grid
+</code></pre>
+
+<p>activates the grid in the background. This is deactivated by default</p>
+
+<pre><code>set term png size 800,600
+set output &quot;file.png&quot;
+</code></pre>
+
+<p>These lines tell gnuplot not to show the picture directly but to send it in a file as a png document</p>
+
+<pre><code>plot &quot;fibonacci.csv&quot; using (row,row=row+1):1 title 'Fibonacci' with lines
+</code></pre>
+
+<p>This is where the magic happens: &ldquo;plot&rdquo; is the actual command to plot the image. With the parameter &ldquo;fibonacci.csv&rdquo; gnuplot tries to get the values from a file rather than a function (like sin(x) or cos(x)&hellip; ) and the following construct tells gnuplot which values it has to use</p>
+
+<pre><code>row=-11
+... (row,row=row+1):1 ...
+</code></pre>
+
+<p>Usualy gnuplot draws one dot for a given x/y-value. So we need two values. But in our file is only one value, the fibonacci-number (our y-value). One way to get rid of that problem would be to include a x-value in the file as well. But with the help of black magic (and variables) we can do it (in this case) without a second column.</p>
+
+<pre><code>row=-11
+</code></pre>
+
+<p>Initializes a variable with the value -11. In the plot command we can use this variable for our x-value. In that case our command would be</p>
+
+<pre><code>plot &quot;fibonacci.csv&quot; using row:1 title 'Fibonacci' with lines
+</code></pre>
+
+<p>But that would be problematic: As long as row equals -11 the x-value for every plot-point would be -11! So we have to build a combined argument &ldquo;(row,row=row+1)&rdquo; as x value. It&rsquo;s best to read as &ldquo;use row as x-value, then increment row by one&rdquo;. After the combined command has to follow a colon and the y-value. That would be &ldquo;1&rdquo; Attention: &ldquo;1&rdquo; refers to the first column, not the value 1!</p>
+
+<p>et voilà! The graph is done.</p>
+
+<p>I&rsquo;ve found plenty of ressources on the web (and so will you, if you google it) but this site helped me especially:</p>
+
+<p><a href="http://t16web.lanl.gov/Kawano/gnuplot/intro/index-e.html">http://t16web.lanl.gov/Kawano/gnuplot/intro/index-e.html</a></p>
+
+  </section>
+  <div class="clearfix">
+    
+      <div class="post-date pull-left">
+        <span class="small">
+          Posted on
+          Feb 17, 2012 at 20:52
+        </span>
+      </div>
+    
+    <div class="pull-right">
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/gnuplot/">#Gnuplot</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/howto/">#Howto</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/tutorial/">#Tutorial</a></span>
+        
+      
+    </div>
+  </div>
+  <footer>
+    
+      
+    
+    
+    <div class="delimiter"></div>
+    <div class="pager-container">
+      
+        <a class="btn btn-primary btn-older-posts" href="http://example.org/posts/2012-02-17-ksh-the-second/">
+          <div>
+            <span aria-hidden="true">&larr;</span> Older Posts
+          </div>
+        </a>
+      
+      
+        <a class="btn btn-primary btn-newer-posts" href="http://example.org/posts/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/">
+          <div>
+            Newer Posts <span aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+      
+    </div>
+  </footer>
+</article>
+<div class="delimiter"></div>
+
+  </main>
+  <footer class="container global-footer">
+    <div class="copyright-note pull-left">
+      
+    </div>
+    <div class="sns-links hidden-print">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  
+  
+  
+  
+</body>
+</html>
+

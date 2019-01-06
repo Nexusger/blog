@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Validateset on Stuff</title>
+    <link>http://example.org/tags/validateset/</link>
+    <description>Recent content in Validateset on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Jan 2016 10:11:44 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/validateset/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Powershell cmdlets with dynamic param AND $args don&#39;t work</title>
+      <link>http://example.org/posts/2016-01-07-powershell-cmdlets-with-dynamic-param-and-args-dont-work/</link>
+      <pubDate>Thu, 07 Jan 2016 10:11:44 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-07-powershell-cmdlets-with-dynamic-param-and-args-dont-work/</guid>
+      <description>Over the weekend I tried to implement auto completion in Elixir&amp;rsquo;s mix (in Windows). Unfortunately I didn&amp;rsquo;t make it without introducing some problems. So I didn&amp;rsquo;t committed my changes to upstream. Currently I try to reach some of the more renowned Elixir/Windows contributors, to discuss the changes .
+Motivation Under normal circumstances I don&amp;rsquo;t use more mix tasks then test, phoenix.server and release but sometimes you need this weird command, you just can&amp;rsquo;t remember.</description>
+    </item>
+    
+  </channel>
+</rss>

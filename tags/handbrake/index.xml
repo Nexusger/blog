@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Handbrake on Stuff</title>
+    <link>http://example.org/tags/handbrake/</link>
+    <description>Recent content in Handbrake on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Nov 2011 09:48:32 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/handbrake/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to install HandBrake on Ubuntu 11.10</title>
+      <link>http://example.org/posts/2011-11-03-how-to-install-handbrake-on-ubuntu-11-10/</link>
+      <pubDate>Thu, 03 Nov 2011 09:48:32 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2011-11-03-how-to-install-handbrake-on-ubuntu-11-10/</guid>
+      <description>If not already happened: Install the synaptic package manager (search for synaptic in the Ubuntu software center)
+Download this package according to your architecture. If you are not sure which architecture you need, try amd64 or i386. This are the two most used architectures.
+Install the package by double clicking.
+Open a terminal and execute sudo add-apt-repository ppa:stebbins/handbrake-releases
+Open synaptics package manager, go to preferences / package sources / other software.</description>
+    </item>
+    
+  </channel>
+</rss>

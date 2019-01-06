@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Stuff</title>
+    <link>http://example.org/categories/python/</link>
+    <description>Recent content in Python on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Nov 2015 11:00:49 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python, pandas and json_read with utf-8 encoding</title>
+      <link>http://example.org/posts/2015-11-02-python-pandas-and-json_read-with-utf-8-encoding/</link>
+      <pubDate>Mon, 02 Nov 2015 11:00:49 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-11-02-python-pandas-and-json_read-with-utf-8-encoding/</guid>
+      <description>The pandas library is a fantastic python toolkit to work with data. Recently I needed to read some json files in a pandas dataframe. Usually you can do that easily with the built in method:
+import pandas as pd pd.read_json(&#39;example.json&#39;)  But this method fails, if it encounters utf-8 encoded files. In contrast to the more often used methods _read_table_ and _read_csv_, _read_json_ does not provide an _encoding_ parameter. To work around this you have to import the codecs module and use the _open_ method:</description>
+    </item>
+    
+  </channel>
+</rss>

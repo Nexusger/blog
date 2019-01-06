@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Story on Stuff</title>
+    <link>http://example.org/tags/story/</link>
+    <description>Recent content in Story on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Jan 2016 10:13:59 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/story/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Didaktics of media: Storytelling</title>
+      <link>http://example.org/posts/2016-01-28-didaktics-of-media-storytelling/</link>
+      <pubDate>Thu, 28 Jan 2016 10:13:59 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-28-didaktics-of-media-storytelling/</guid>
+      <description>This blog post is one part of the series &amp;ldquo;learning diary&amp;rdquo; for a course at my university.
+Goals: Based on the title for that unit I assume we will learn something about storytelling in the context of didactic.
+What have I learned: People remember stories. If information is wrapped up in a story, it increases the possibility that one remember the information as well.
+A story consists of a setting, a plot, a character, a narrator with a point of view, (words, pictures, sounds) and most importantly listeners or readers.</description>
+    </item>
+    
+    <item>
+      <title>Kick Ass - Comic vs. Movie</title>
+      <link>http://example.org/posts/2012-10-03-kick-ass-comic-vs-movie/</link>
+      <pubDate>Wed, 03 Oct 2012 22:00:08 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-03-kick-ass-comic-vs-movie/</guid>
+      <description>Whoohoo I loved Kick Ass The movie, but now that I&amp;rsquo;ve read the underlaying comic, I think a little bit different about the movie. At least in the story there are major changes
+The movie is, for it self, very entertaining. The cast of the movie was well done and consistent. I think the actors matched the characters and especialy that Hit Girl was a good cast. The soundtrackis entertaining and the track &amp;ldquo;stand up&amp;rdquo; from &amp;ldquo;the prodigy&amp;rdquo; is at least for me inseparably associated with this movie.</description>
+    </item>
+    
+  </channel>
+</rss>

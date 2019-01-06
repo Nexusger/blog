@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" Python, pandas and json_read with utf-8 encoding &middot;  Stuff" />
+  
+  <meta property="og:site_name" content="Stuff" />
+  <meta property="og:url" content="http://example.org/posts/2015-11-02-python-pandas-and-json_read-with-utf-8-encoding/" />
+  
+  
+    <meta property="og:type" content="article" />
+    
+    <meta property="og:article:published_time" content="2015-11-02T11:00:49Z" />
+    
+      <meta property="og:article:tag" content="data science" />
+    
+      <meta property="og:article:tag" content="pandas" />
+    
+      <meta property="og:article:tag" content="python" />
+    
+  
+
+  <title>
+     Python, pandas and json_read with utf-8 encoding &middot;  Stuff
+  </title>
+
+  <link rel="alternative stylesheet" href="http://example.org/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/main.css" />
+  <link rel="stylesheet" href="http://example.org/css/github.css" />
+  <link rel="stylesheet" href="http://example.org/css/color-theme.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  <link rel="shortcut icon" href="http://example.org/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://example.org/images/apple-touch-icon.png" />
+
+  
+
+  
+
+  
+</head>
+<body>
+  
+  <header class="global-header"  style="background-image:url(http://example.org/images/bg.jpg)">
+  
+    <section class="header-text">
+      <h1><a href="http://example.org/">Stuff</a></h1>
+      
+      
+        <a class="btn btn-default btn-home" href="http://example.org/">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          &nbsp;Home
+        </a>
+      
+      
+      <div class="navbar-container">
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/me">
+            About me
+          </a>
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/imprint">
+            Imprint
+          </a>
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+
+<article>
+  <header class="article-title">
+    <h1 class="text-primary">Python, pandas and json_read with utf-8 encoding</h1>
+  </header>
+  <div class="delimiter"></div>
+  <section>
+    <p>The pandas library is a fantastic python toolkit to work with data. Recently I needed to read some json files in a pandas dataframe. Usually you can do that easily with the built in method:</p>
+
+<pre><code>import pandas as pd
+pd.read_json('example.json')
+</code></pre>
+
+<p>But this method fails, if it encounters utf-8 encoded files. In contrast to the more often used methods <code>_read_table_</code> and <code>_read_csv_</code>, <code>_read_json_</code> does not provide an <code>_encoding_</code> parameter. To work around this you have to import the codecs module and use the <code>_open_</code> method:</p>
+
+<pre><code>import codecs
+import pandas as pd
+pd.read_json(codecs.open('example.json', 'r', 'utf-8'))
+</code></pre>
+
+  </section>
+  <div class="clearfix">
+    
+      <div class="post-date pull-left">
+        <span class="small">
+          Posted on
+          Nov 2, 2015 at 11:00
+        </span>
+      </div>
+    
+    <div class="pull-right">
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/data-science/">#Data Science</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/pandas/">#Pandas</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/python/">#Python</a></span>
+        
+      
+    </div>
+  </div>
+  <footer>
+    
+      
+    
+    
+    <div class="delimiter"></div>
+    <div class="pager-container">
+      
+        <a class="btn btn-primary btn-older-posts" href="http://example.org/posts/2015-10-30-elixir-postgres-and-chocolatey/">
+          <div>
+            <span aria-hidden="true">&larr;</span> Older Posts
+          </div>
+        </a>
+      
+      
+        <a class="btn btn-primary btn-newer-posts" href="http://example.org/posts/2015-11-04-didaktics-of-media-learning-unit-one-report/">
+          <div>
+            Newer Posts <span aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+      
+    </div>
+  </footer>
+</article>
+<div class="delimiter"></div>
+
+  </main>
+  <footer class="container global-footer">
+    <div class="copyright-note pull-left">
+      
+    </div>
+    <div class="sns-links hidden-print">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  
+  
+  
+  
+</body>
+</html>
+

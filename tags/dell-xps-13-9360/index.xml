@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dell Xps 13 9360 on Stuff</title>
+    <link>http://example.org/tags/dell-xps-13-9360/</link>
+    <description>Recent content in Dell Xps 13 9360 on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Mar 2017 09:40:44 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/dell-xps-13-9360/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dell XPS 13 9360 - Trackpad Issue</title>
+      <link>http://example.org/posts/2017-03-05-dell-xps-13-9360-trackpad-issue/</link>
+      <pubDate>Sun, 05 Mar 2017 09:40:44 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2017-03-05-dell-xps-13-9360-trackpad-issue/</guid>
+      <description>Summary: My Dell XPS 13 9360 laptop has issues with the touchpad. The Dell support site is the pure horror but the Dell support team via Facebook is fast and helpful.
+Long story: Several days ago the trackpad stopped working. It started when I connected a Apple Magic Mouse for more convenient playing. When I disconnected the mouse, I realized that the trackpad stopped working. Thinking the laptop just swallowed up I restarted the system.</description>
+    </item>
+    
+    <item>
+      <title>Travel Laptop</title>
+      <link>http://example.org/posts/2017-03-05-travel-laptop/</link>
+      <pubDate>Sun, 05 Mar 2017 09:00:47 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2017-03-05-travel-laptop/</guid>
+      <description>When we started our tour three month ago, I replaced my trusty Lenovo Thinkpad T520 with a shiny new Dell XPS 13 (9360). The reasons where many fold: As weight and volume are premium while travelling half the weight and less than half the volume is awesome. As I didn&amp;rsquo;t intended to do a lot computer stuff, I settled for a 13 inch screen instead of a 15 inch screen. The other main reason is definitely the battery life.</description>
+    </item>
+    
+  </channel>
+</rss>

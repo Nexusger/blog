@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Stuff</title>
+    <link>http://example.org/pages/</link>
+    <description>Recent content in Pages on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Jan 2016 13:26:41 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Imprint</title>
+      <link>http://example.org/pages/imprint/</link>
+      <pubDate>Thu, 28 Jan 2016 13:26:41 +0000</pubDate>
+      
+      <guid>http://example.org/pages/imprint/</guid>
+      <description>Datenschutzerklärung Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz „Daten“) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepräsenzen, wie z.B. unser Social Media Profile auf (nachfolgend gemeinsam bezeichnet als „Onlineangebot“). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. „Verarbeitung“ oder „Verantwortlicher“ verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).</description>
+    </item>
+    
+    <item>
+      <title>Me</title>
+      <link>http://example.org/pages/me/</link>
+      <pubDate>Sun, 25 Oct 2015 20:34:48 +0000</pubDate>
+      
+      <guid>http://example.org/pages/me/</guid>
+      <description>No Content Found</description>
+    </item>
+    
+    <item>
+      <title>My Setup</title>
+      <link>http://example.org/pages/my-setup/</link>
+      <pubDate>Mon, 21 Apr 2014 23:04:24 +0000</pubDate>
+      
+      <guid>http://example.org/pages/my-setup/</guid>
+      <description>This Section is updated more or less constantly
+Main Machine I work mostly on my Lenovo Thinkpad T520 with an i7-2670QM processor and 12 Gig of RAM. Because I use my machine a lot on my desk I&amp;rsquo;m using a Lenovo Minidock 3 Plus Dockingstation and two external displays.
+Mobile Currently I&amp;rsquo;m using a Sony Xperia Z3 Compact. I retired my Samsung Galaxy because of various problems with the hardware.</description>
+    </item>
+    
+  </channel>
+</rss>

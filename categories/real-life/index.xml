@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Real Life on Stuff</title>
+    <link>http://example.org/categories/real-life/</link>
+    <description>Recent content in Real Life on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Mar 2017 09:40:44 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/real-life/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dell XPS 13 9360 - Trackpad Issue</title>
+      <link>http://example.org/posts/2017-03-05-dell-xps-13-9360-trackpad-issue/</link>
+      <pubDate>Sun, 05 Mar 2017 09:40:44 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2017-03-05-dell-xps-13-9360-trackpad-issue/</guid>
+      <description>Summary: My Dell XPS 13 9360 laptop has issues with the touchpad. The Dell support site is the pure horror but the Dell support team via Facebook is fast and helpful.
+Long story: Several days ago the trackpad stopped working. It started when I connected a Apple Magic Mouse for more convenient playing. When I disconnected the mouse, I realized that the trackpad stopped working. Thinking the laptop just swallowed up I restarted the system.</description>
+    </item>
+    
+    <item>
+      <title>Travel Laptop</title>
+      <link>http://example.org/posts/2017-03-05-travel-laptop/</link>
+      <pubDate>Sun, 05 Mar 2017 09:00:47 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2017-03-05-travel-laptop/</guid>
+      <description>When we started our tour three month ago, I replaced my trusty Lenovo Thinkpad T520 with a shiny new Dell XPS 13 (9360). The reasons where many fold: As weight and volume are premium while travelling half the weight and less than half the volume is awesome. As I didn&amp;rsquo;t intended to do a lot computer stuff, I settled for a 13 inch screen instead of a 15 inch screen. The other main reason is definitely the battery life.</description>
+    </item>
+    
+    <item>
+      <title>Is this thing dead yet?</title>
+      <link>http://example.org/posts/2016-12-19-is-this-thing-dead-yet/</link>
+      <pubDate>Mon, 19 Dec 2016 00:40:23 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-12-19-is-this-thing-dead-yet/</guid>
+      <description>I did it, I finished my masters in Informatics. After five and a half years I finally don&amp;rsquo;t have to worry any more about exams and tasks for the university. A relieving feeling.
+Retrospective Looking back at the time in the university (University of Applied Sciences Berlin) I&amp;rsquo;m happy that I took the challenge of starting to study. As I don&amp;rsquo;t have the normally mandatory &amp;ldquo;Abitur&amp;rdquo; I was only able to study because auf my apprenticeship and work experience.</description>
+    </item>
+    
+    <item>
+      <title>YNAB - One year review</title>
+      <link>http://example.org/posts/2015-04-09-ynab-one-year-review/</link>
+      <pubDate>Thu, 09 Apr 2015 15:18:31 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-04-09-ynab-one-year-review/</guid>
+      <description>Tl;dr: YNAB4 is awesome and you should give it a try. I managed my finances!
+How the time flies by! A year ago I installed You Need A Budget 4 as trial on my system. Since then I used the software (or the Android version) everyday. After the trial period I asked the ynab.com for the free student version of their software. After the license key arrived everything worked fine.</description>
+    </item>
+    
+    <item>
+      <title>Barcelona, day two: Montjuic and El barri gothic</title>
+      <link>http://example.org/posts/2015-03-17-barcelona-day-two-montjuic-and-el-barri-gothic/</link>
+      <pubDate>Tue, 17 Mar 2015 22:45:27 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-03-17-barcelona-day-two-montjuic-and-el-barri-gothic/</guid>
+      <description>The second day of our holiday started relaxed: We slept till 11 AM and had a long breakfast with cereals and toast. Interestingly enough the milk you can buy here in the supermarket gets sold uncooled. This seemed a littel bit odd to me, because in Germany almost all milk is getting sold cooled. The only milk in Germany you can buy uncooled is UHT-milk. So I assume the milk is kinda prepared as well.</description>
+    </item>
+    
+    <item>
+      <title>Barcelona, Day one</title>
+      <link>http://example.org/posts/2015-03-16-barcelona-day-one/</link>
+      <pubDate>Mon, 16 Mar 2015 23:50:40 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-03-16-barcelona-day-one/</guid>
+      <description>Today my fiancée and I flew to Barcelona, for our vacation. It&amp;rsquo;s a bit early in the year for a hot Spain holiday, but the city is big enough to cover some bad-weather days.
+We flew with germanwings from Berlin at 11 AM and had a pleasantly easy flight. My fiancée and I played Ticket to Ride on her iPad (two times, we had a tie). By the way, Ticket to Ride is a nice game you should absolutly try it once (Amazon Affiliate Link)In Barcelona we took the Aerobus Barcelona to the plaça del catalunya and walked the last part to our AirBnB accommodation.</description>
+    </item>
+    
+    <item>
+      <title>Barcelona, here we come!</title>
+      <link>http://example.org/posts/2015-03-16-barcelona-here-we-come/</link>
+      <pubDate>Mon, 16 Mar 2015 08:11:12 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-03-16-barcelona-here-we-come/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>You Need A Budget - Free students licence</title>
+      <link>http://example.org/posts/2014-06-04-you-need-a-budget-free-students-licence/</link>
+      <pubDate>Wed, 04 Jun 2014 21:02:49 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2014-06-04-you-need-a-budget-free-students-licence/</guid>
+      <description>I&amp;rsquo;m a huge fan of the software You Need A Budget for my budgeting purposes. I was evaluating the software after I realized that my Excel solution is not feasible (read: to complicated).
+I installed the 30 days trial version until it expired. After that I uninstalled it and used the Steam demo version. So I had double the evaluation time. And evaluate I did. After that time I was this close to actually purchase YNAB 4 via Steam.</description>
+    </item>
+    
+  </channel>
+</rss>

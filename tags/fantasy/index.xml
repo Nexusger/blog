@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fantasy on Stuff</title>
+    <link>http://example.org/tags/fantasy/</link>
+    <description>Recent content in Fantasy on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Feb 2012 23:39:09 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/fantasy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Desert Spear - Peter v. Brett</title>
+      <link>http://example.org/posts/2012-02-24-the-desert-spear-peter-v-brett/</link>
+      <pubDate>Fri, 24 Feb 2012 23:39:09 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-24-the-desert-spear-peter-v-brett/</guid>
+      <description>Dang! that was enthralling. I just read Peter V. Brett&amp;rsquo;s second novel &amp;ldquo;Desert spear&amp;rdquo; from the demon cycle. I&amp;rsquo;m still a little bit agitated. I&amp;rsquo;ve read the first book a while ago and found it very good. In my opinion the second book is even better than the first one. I couldn&amp;rsquo;t refrain from reading it for about 7 hours today&amp;hellip;
+I realy like how the author Peter V. Brett wove the plots with the different characters.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Facebook on Stuff</title>
+    <link>http://example.org/tags/facebook/</link>
+    <description>Recent content in Facebook on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Nov 2012 23:19:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/facebook/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows 7 - HowTo change system HDD to SSD (With built in tools only)</title>
+      <link>http://example.org/posts/2012-11-16-windows-7-howto-change-system-hdd-to-ssd-with-built-in-tools-only/</link>
+      <pubDate>Fri, 16 Nov 2012 23:19:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-11-16-windows-7-howto-change-system-hdd-to-ssd-with-built-in-tools-only/</guid>
+      <description>Ingredients:  Current Laptop or PC New SSD External Harddisk (for backup, so it&amp;rsquo;d better be fast and big) One empty DVD (or the recovery disc) Bunch of screwdrivers  Abstract:  Shrink your HDD partition to a size smaller than the SSD (*) Create a recovery disk Create a system image with Windows backup on the external Harddisk Replace your HDD with the shiny new SSD Boot with recovery disk Choose to restore from a system backup  (*) The first part is realy important.</description>
+    </item>
+    
+    <item>
+      <title>Setting up Wifi on Ubuntu 12.04 Server via command line (yeah, finally some technical stuff )</title>
+      <link>http://example.org/posts/2012-10-22-setting-up-wifi-on-ubuntu-12-04-server-via-command-line-yeah-finally-some-technical-stuff/</link>
+      <pubDate>Mon, 22 Oct 2012 21:45:21 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-22-setting-up-wifi-on-ubuntu-12-04-server-via-command-line-yeah-finally-some-technical-stuff/</guid>
+      <description>Problem: Setting up a wireless adapter on Ubuntu server 12.04 LTS via CLI isn&amp;rsquo;t THAT easy. Plug&amp;rsquo;n&amp;rsquo;Play doesn&amp;rsquo;t simply work. Good thing there is Google. And a lot of helpful sites.
+Target: Insert the stick (or boot with it) and connect automaticly to the preferred network
+This is not a tutorial. And it&amp;rsquo;s realy not for the uninitiated. It&amp;rsquo;s more like a short reminder for me, or people who have a basic idea what&amp;rsquo;s happening here&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Kick Ass - Comic vs. Movie</title>
+      <link>http://example.org/posts/2012-10-03-kick-ass-comic-vs-movie/</link>
+      <pubDate>Wed, 03 Oct 2012 22:00:08 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-03-kick-ass-comic-vs-movie/</guid>
+      <description>Whoohoo I loved Kick Ass The movie, but now that I&amp;rsquo;ve read the underlaying comic, I think a little bit different about the movie. At least in the story there are major changes
+The movie is, for it self, very entertaining. The cast of the movie was well done and consistent. I think the actors matched the characters and especialy that Hit Girl was a good cast. The soundtrackis entertaining and the track &amp;ldquo;stand up&amp;rdquo; from &amp;ldquo;the prodigy&amp;rdquo; is at least for me inseparably associated with this movie.</description>
+    </item>
+    
+    <item>
+      <title>New term, new pain</title>
+      <link>http://example.org/posts/2012-10-02-new-term-new-pain/</link>
+      <pubDate>Tue, 02 Oct 2012 07:25:27 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-02-new-term-new-pain/</guid>
+      <description>A new term started today and so far nothing interesting happened. System management and analysis would be generally an interesting course, but till now it&amp;rsquo;s only a recapitulation of known facts, so everyone has the same level of knowledge.
+The problem is: There are so many students here which seem to know everything, or at least think that they know everything. (Of course, only David knows everything). It&amp;rsquo;s interesting when they answer a mere rethorical question wrong and the lecturer tries to avoid to say: &amp;ldquo;That&amp;rsquo;s wrong&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Egg cartons. A lot of them (47 to be precisely)</title>
+      <link>http://example.org/posts/2012-09-10-egg-cartons-a-lot-of-them-47-to-be-precisely/</link>
+      <pubDate>Mon, 10 Sep 2012 20:16:28 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-09-10-egg-cartons-a-lot-of-them-47-to-be-precisely/</guid>
+      <description>Ever wanted to know how egg cartons would look like, if you stack up enough to contain 352 eggs?
+Me neither. Nonetheless, here are the egg cartons we gathered for our band room:
+
+We gathered so many of them to quieten our band room. But now (after we accumulated so many cartons) we canceled the room, because of a raise of the rent.</description>
+    </item>
+    
+  </channel>
+</rss>

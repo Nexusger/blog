@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>University on Stuff</title>
+    <link>http://example.org/categories/university/</link>
+    <description>Recent content in University on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Dec 2016 00:40:23 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/university/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Is this thing dead yet?</title>
+      <link>http://example.org/posts/2016-12-19-is-this-thing-dead-yet/</link>
+      <pubDate>Mon, 19 Dec 2016 00:40:23 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-12-19-is-this-thing-dead-yet/</guid>
+      <description>I did it, I finished my masters in Informatics. After five and a half years I finally don&amp;rsquo;t have to worry any more about exams and tasks for the university. A relieving feeling.
+Retrospective Looking back at the time in the university (University of Applied Sciences Berlin) I&amp;rsquo;m happy that I took the challenge of starting to study. As I don&amp;rsquo;t have the normally mandatory &amp;ldquo;Abitur&amp;rdquo; I was only able to study because auf my apprenticeship and work experience.</description>
+    </item>
+    
+    <item>
+      <title>Didaktics of media: Learning unit four - Report</title>
+      <link>http://example.org/posts/2016-02-07-didaktics-of-media-learning-unit-four-report/</link>
+      <pubDate>Sun, 07 Feb 2016 18:54:38 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-02-07-didaktics-of-media-learning-unit-four-report/</guid>
+      <description>This blog post is one part of the series “learning diary” for a course at my university.
+Goal of this report is to take and rate a online learning unit. For the fourth and final learning unit we should take a mobile learning unit. I used the app Learning Japanese (Google Play Store) for my mobile phone. As an experiment we have been asked to create a video for the review: https://youtu.</description>
+    </item>
+    
+    <item>
+      <title>LaTeX template for Master thesis</title>
+      <link>http://example.org/posts/2016-01-24-latex-template-for-master-thesis/</link>
+      <pubDate>Sun, 24 Jan 2016 19:49:45 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-24-latex-template-for-master-thesis/</guid>
+      <description>My fellow student Alexander Czyrny made a template for his master thesis in LaTeX. The template covers all basic layout settings needed for a master thesis at our University (University of Applied Sciences Berlin). He also added an example chapter with the more advanced LaTeX commands.
+If you wan&amp;rsquo;t to check it out clone his repository on GitHub !</description>
+    </item>
+    
+    <item>
+      <title>Elixir for aspiring Erlang developers</title>
+      <link>http://example.org/posts/2016-01-19-elixir-for-aspiring-erlang-developers/</link>
+      <pubDate>Tue, 19 Jan 2016 16:53:59 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-19-elixir-for-aspiring-erlang-developers/</guid>
+      <description>For the &amp;ldquo;Independent Coursework&amp;rdquo; of the University of Applied Sciences Berlin I created the following presentation:
+**Elixir for aspiring Erlang developers ** from Torben Dohrn
+Target audience are students of the bachelors degree Computer Science of the University.
+If anything is unclear (or god forbid, wrong) drop me a mail or a tweet</description>
+    </item>
+    
+    <item>
+      <title>Didaktics of media: Learning unit three – Report</title>
+      <link>http://example.org/posts/2016-01-17-didaktics-of-media-learning-unit-three-report/</link>
+      <pubDate>Sun, 17 Jan 2016 18:17:08 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-17-didaktics-of-media-learning-unit-three-report/</guid>
+      <description>This blog post is one part of the series “learning diary” for a course at my university.
+Goal of this report is to take and rate a online learning unit. For the third learning unit we should take either a webinar or a MOOC. I participated in the course Design 1o1 Redux - Part 2: My House from the Iversity platform.
+Short synopsis of the unit: The course “Design 1o1 Redux – Part 2: My House” was the second of three courses on the platform Iversity created by the Design 1o1 Community.</description>
+    </item>
+    
+    <item>
+      <title>Didaktics of media: Designing MOOCs</title>
+      <link>http://example.org/posts/2016-01-06-didaktics-of-media-designing-moocs/</link>
+      <pubDate>Wed, 06 Jan 2016 20:59:50 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-06-didaktics-of-media-designing-moocs/</guid>
+      <description>This blog post is one part of the series &amp;ldquo;learning diary&amp;rdquo; for a course at my university.
+Goals: Based on the title for that unit I assume we will learn something about designing MOOC. The linked article on the other hand, features a paper about the Tech Ed Revolution, which &amp;ldquo;will be the Learner Revolution&amp;rdquo;. It goes on and on about investors needing to put money in education (either traditional education or start ups) and how these start ups could fuel the next learning revolution.</description>
+    </item>
+    
+    <item>
+      <title>Didaktics of media: Learning unit two - Report</title>
+      <link>http://example.org/posts/2015-12-17-didaktics-of-media-learning-unit-two-report/</link>
+      <pubDate>Thu, 17 Dec 2015 09:04:58 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-12-17-didaktics-of-media-learning-unit-two-report/</guid>
+      <description>This blog post is one part of the series &amp;ldquo;learning diary&amp;rdquo; for a course at my university.
+Goal of this report is to take and rate a online learning unit. For the second learning unit we should take a video based course. I watched a course on the platform http://pluralsight.com.
+Short synopsis of the unit: The course “Building Highly Scalable Web Applications in Azure” is a video based course on the platform http://pluralsight.</description>
+    </item>
+    
+    <item>
+      <title>A new project</title>
+      <link>http://example.org/posts/2012-10-09-a-new-project/</link>
+      <pubDate>Tue, 09 Oct 2012 06:43:39 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-09-a-new-project/</guid>
+      <description>Whoohaaa a new project from the university. David and I were assigned to the Computer Museum on the university campus. There we (and six other students) will be responsible to install, customize and deploy a tool called CollectiveAccess (Homepage). CA is a open source tool to register items, tag and mark them and then display them on a front end.
+There were two teams of the terms before us, who already made some analysis, set up server and even made some sleek videos of some of the items.</description>
+    </item>
+    
+    <item>
+      <title>New term, new pain</title>
+      <link>http://example.org/posts/2012-10-02-new-term-new-pain/</link>
+      <pubDate>Tue, 02 Oct 2012 07:25:27 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-02-new-term-new-pain/</guid>
+      <description>A new term started today and so far nothing interesting happened. System management and analysis would be generally an interesting course, but till now it&amp;rsquo;s only a recapitulation of known facts, so everyone has the same level of knowledge.
+The problem is: There are so many students here which seem to know everything, or at least think that they know everything. (Of course, only David knows everything). It&amp;rsquo;s interesting when they answer a mere rethorical question wrong and the lecturer tries to avoid to say: &amp;ldquo;That&amp;rsquo;s wrong&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

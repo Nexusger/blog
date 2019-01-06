@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on Stuff</title>
+    <link>http://example.org/tags/github/</link>
+    <description>Recent content in Github on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Jan 2016 19:49:45 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LaTeX template for Master thesis</title>
+      <link>http://example.org/posts/2016-01-24-latex-template-for-master-thesis/</link>
+      <pubDate>Sun, 24 Jan 2016 19:49:45 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-24-latex-template-for-master-thesis/</guid>
+      <description>My fellow student Alexander Czyrny made a template for his master thesis in LaTeX. The template covers all basic layout settings needed for a master thesis at our University (University of Applied Sciences Berlin). He also added an example chapter with the more advanced LaTeX commands.
+If you wan&amp;rsquo;t to check it out clone his repository on GitHub !</description>
+    </item>
+    
+    <item>
+      <title>ZLocation</title>
+      <link>http://example.org/posts/2016-01-20-zlocation/</link>
+      <pubDate>Wed, 20 Jan 2016 10:56:14 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-20-zlocation/</guid>
+      <description>ZLocation (&amp;ldquo;A cd that learns&amp;rdquo;) is a PowerShell module for better navigating through folders.
+I used the predecessor for a while and was fed up with corrupted database entries. I&amp;rsquo;ll test ZLocation thorough-fully but try it for your self!</description>
+    </item>
+    
+    <item>
+      <title>Powershell cmdlets with dynamic param AND $args don&#39;t work</title>
+      <link>http://example.org/posts/2016-01-07-powershell-cmdlets-with-dynamic-param-and-args-dont-work/</link>
+      <pubDate>Thu, 07 Jan 2016 10:11:44 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-07-powershell-cmdlets-with-dynamic-param-and-args-dont-work/</guid>
+      <description>Over the weekend I tried to implement auto completion in Elixir&amp;rsquo;s mix (in Windows). Unfortunately I didn&amp;rsquo;t make it without introducing some problems. So I didn&amp;rsquo;t committed my changes to upstream. Currently I try to reach some of the more renowned Elixir/Windows contributors, to discuss the changes .
+Motivation Under normal circumstances I don&amp;rsquo;t use more mix tasks then test, phoenix.server and release but sometimes you need this weird command, you just can&amp;rsquo;t remember.</description>
+    </item>
+    
+  </channel>
+</rss>

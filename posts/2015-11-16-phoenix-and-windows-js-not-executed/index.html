@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" Phoenix and Windows: js not executed &middot;  Stuff" />
+  
+  <meta property="og:site_name" content="Stuff" />
+  <meta property="og:url" content="http://example.org/posts/2015-11-16-phoenix-and-windows-js-not-executed/" />
+  
+  
+    <meta property="og:type" content="article" />
+    
+    <meta property="og:article:published_time" content="2015-11-16T13:42:51Z" />
+    
+      <meta property="og:article:tag" content="Brunch.io" />
+    
+      <meta property="og:article:tag" content="stackoverflow" />
+    
+      <meta property="og:article:tag" content="windows" />
+    
+  
+
+  <title>
+     Phoenix and Windows: js not executed &middot;  Stuff
+  </title>
+
+  <link rel="alternative stylesheet" href="http://example.org/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/main.css" />
+  <link rel="stylesheet" href="http://example.org/css/github.css" />
+  <link rel="stylesheet" href="http://example.org/css/color-theme.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  <link rel="shortcut icon" href="http://example.org/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://example.org/images/apple-touch-icon.png" />
+
+  
+
+  
+
+  
+</head>
+<body>
+  
+  <header class="global-header"  style="background-image:url(http://example.org/images/bg.jpg)">
+  
+    <section class="header-text">
+      <h1><a href="http://example.org/">Stuff</a></h1>
+      
+      
+        <a class="btn btn-default btn-home" href="http://example.org/">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          &nbsp;Home
+        </a>
+      
+      
+      <div class="navbar-container">
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/me">
+            About me
+          </a>
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/imprint">
+            Imprint
+          </a>
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+
+<article>
+  <header class="article-title">
+    <h1 class="text-primary">Phoenix and Windows: js not executed</h1>
+  </header>
+  <div class="delimiter"></div>
+  <section>
+    <p>I&rsquo;m currently on my way to learn a little bit of Elixir. I like the idea of functional programming language made easy. For starters I&rsquo;m doing all the tutorials I can find. My most recent tutorial was the <a href="http://www.phoenixframework.org/docs/channels">Channels Tutorial</a> of the Phoenix Framework.</p>
+
+<p>As I did the tutorial, I encountered a problem: My <em>socket.js</em> file was concatenated in the <em>app.js</em> file via <a href="http://brunch.io/">Brunch.io</a> but the promised message &ldquo;Joined successfully&rdquo; did not show up in the console.</p>
+
+<p>After some fiddling with JavaScript I gave up and searched for the error. I found a similar error description on Stack &ldquo;<a href="http://stackoverflow.com/questions/32674245/js-in-html-is-not-executing-in-phoenix-framework-sample-app">js in html is not executing in Phoenix framework sample app</a>&rdquo;. As it turns out the tutorial/the getting started is not really covering the Windows side&hellip; To fix this problem edit your /brunch-config.js file.</p>
+
+<p>At the bottom is a modules key. Change the value from</p>
+
+<pre><code>modules: {
+    autoRequire: {
+      &quot;js/app.js&quot;: [&quot;web/static/js/app&quot;]
+    }
+  }
+</code></pre>
+
+<p>to</p>
+
+<pre><code>modules: {
+    autoRequire: {
+      &quot;js/app.js&quot;: [&quot;web/static/js/app&quot;],
+      &quot;js\\app.js&quot;: [&quot;web/static/js/app&quot;]
+    }
+  }
+</code></pre>
+
+<p>Voilà, <em>brunch.io</em> is now auto requiring the missing <em>app.js</em> even under Windows</p>
+
+  </section>
+  <div class="clearfix">
+    
+      <div class="post-date pull-left">
+        <span class="small">
+          Posted on
+          Nov 16, 2015 at 13:42
+        </span>
+      </div>
+    
+    <div class="pull-right">
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/brunch.io/">#Brunch.io</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/stackoverflow/">#Stackoverflow</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/windows/">#Windows</a></span>
+        
+      
+    </div>
+  </div>
+  <footer>
+    
+      
+    
+    
+    <div class="delimiter"></div>
+    <div class="pager-container">
+      
+        <a class="btn btn-primary btn-older-posts" href="http://example.org/posts/2015-11-12-my-recap-of-codemotion-2015-in-berlin/">
+          <div>
+            <span aria-hidden="true">&larr;</span> Older Posts
+          </div>
+        </a>
+      
+      
+        <a class="btn btn-primary btn-newer-posts" href="http://example.org/posts/2015-11-16-didaktics-of-media-evaluation-of-instruction-and-on-line-exercise-design/">
+          <div>
+            Newer Posts <span aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+      
+    </div>
+  </footer>
+</article>
+<div class="delimiter"></div>
+
+  </main>
+  <footer class="container global-footer">
+    <div class="copyright-note pull-left">
+      
+    </div>
+    <div class="sns-links hidden-print">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  
+  
+  
+  
+</body>
+</html>
+

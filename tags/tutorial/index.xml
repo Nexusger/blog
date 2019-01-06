@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on Stuff</title>
+    <link>http://example.org/tags/tutorial/</link>
+    <description>Recent content in Tutorial on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Dec 2015 21:05:41 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Elixir on Raspberry Pi 2 (using Windows)</title>
+      <link>http://example.org/posts/2015-12-20-elixir-on-raspberry-pi-2-using-windows/</link>
+      <pubDate>Sun, 20 Dec 2015 21:05:41 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-12-20-elixir-on-raspberry-pi-2-using-windows/</guid>
+      <description>Goal Deploy an example Elixir application with the Nerves-Project to a Raspberry Pi 2, using an Ubuntu guest in VMware Player on a Windows host.
+Synopsis We are using the Nerves-project, buildroot and Ubuntu in a virtual machine to create a SD-Image, which contains the default application, blinky.
+Motivation After seeing this talk from Garth Hitchens on Embedded Elixir in Action I wanted to try the Nerves project to deploy an Elixir application to my Raspberry Pi 2.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing data with Gnuplot</title>
+      <link>http://example.org/posts/2012-02-17-visualizing-data-with-gnuplot/</link>
+      <pubDate>Fri, 17 Feb 2012 20:52:51 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-17-visualizing-data-with-gnuplot/</guid>
+      <description>On my pursuade for a tool to visualize simple list values I found gnuplot:
+from Wikipedia:
+ gnuplot is a command-line program that can generate two- and three-dimensional plots of functions, data, and data fits.
+ I will focus on the capabilities of gnuplot on two-dimensional plots and in special howto visualize data without a corresponding second data value. But first here is the idea why I needed such a tool:</description>
+    </item>
+    
+    <item>
+      <title>How to install HandBrake on Ubuntu 11.10</title>
+      <link>http://example.org/posts/2011-11-03-how-to-install-handbrake-on-ubuntu-11-10/</link>
+      <pubDate>Thu, 03 Nov 2011 09:48:32 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2011-11-03-how-to-install-handbrake-on-ubuntu-11-10/</guid>
+      <description>If not already happened: Install the synaptic package manager (search for synaptic in the Ubuntu software center)
+Download this package according to your architecture. If you are not sure which architecture you need, try amd64 or i386. This are the two most used architectures.
+Install the package by double clicking.
+Open a terminal and execute sudo add-apt-repository ppa:stebbins/handbrake-releases
+Open synaptics package manager, go to preferences / package sources / other software.</description>
+    </item>
+    
+  </channel>
+</rss>

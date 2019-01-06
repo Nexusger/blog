@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" Improve energy consumption with Ubuntu and Lenovo IdeaPad Z370 (sandy bridge-chipset) &middot;  Stuff" />
+  
+  <meta property="og:site_name" content="Stuff" />
+  <meta property="og:url" content="http://example.org/posts/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/" />
+  
+  
+    <meta property="og:type" content="article" />
+    
+    <meta property="og:article:published_time" content="2012-02-24T17:43:53Z" />
+    
+      <meta property="og:article:tag" content="energy" />
+    
+      <meta property="og:article:tag" content="gnuplot" />
+    
+      <meta property="og:article:tag" content="Kernel" />
+    
+      <meta property="og:article:tag" content="Lenovo" />
+    
+      <meta property="og:article:tag" content="Lenovo IdeaPad Z370" />
+    
+      <meta property="og:article:tag" content="Linux" />
+    
+      <meta property="og:article:tag" content="power" />
+    
+      <meta property="og:article:tag" content="sandy bridge" />
+    
+      <meta property="og:article:tag" content="Ubuntu" />
+    
+      <meta property="og:article:tag" content="watt" />
+    
+      <meta property="og:article:tag" content="z370" />
+    
+  
+
+  <title>
+     Improve energy consumption with Ubuntu and Lenovo IdeaPad Z370 (sandy bridge-chipset) &middot;  Stuff
+  </title>
+
+  <link rel="alternative stylesheet" href="http://example.org/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/main.css" />
+  <link rel="stylesheet" href="http://example.org/css/github.css" />
+  <link rel="stylesheet" href="http://example.org/css/color-theme.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  <link rel="shortcut icon" href="http://example.org/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://example.org/images/apple-touch-icon.png" />
+
+  
+
+  
+
+  
+</head>
+<body>
+  
+  <header class="global-header"  style="background-image:url(http://example.org/images/bg.jpg)">
+  
+    <section class="header-text">
+      <h1><a href="http://example.org/">Stuff</a></h1>
+      
+      
+        <a class="btn btn-default btn-home" href="http://example.org/">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          &nbsp;Home
+        </a>
+      
+      
+      <div class="navbar-container">
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/me">
+            About me
+          </a>
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/imprint">
+            Imprint
+          </a>
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+
+<article>
+  <header class="article-title">
+    <h1 class="text-primary">Improve energy consumption with Ubuntu and Lenovo IdeaPad Z370 (sandy bridge-chipset)</h1>
+  </header>
+  <div class="delimiter"></div>
+  <section>
+    
+
+<p><strong>Update 2015-03-15: As Antiplex mentioned in the comments, the resources are slighlty out of date. An update is pending</strong></p>
+
+<p>I use my laptop (Lenovo Z370, with Ubuntu 11.10) a lot in the college. Unfortunatly there aren&rsquo;t enough plugs in the wall for all students and I&rsquo;m not willing to bring a plug board with me every time. So my approach to the problem was to improve the energy consumption of my laptop. I already had an energy plan with display dimming after two minutes and deactivate bluetooth by default (I don&rsquo;t have any bluetooth gadget, so why bother).</p>
+
+<!-- more -->
+
+<p>There are some rumors that Ubuntu 11.04 and 11.10 consume a lot more energy than the previous versions and slightly more than windows (see for example <a href="http://www.phoronix.com/scan.php?page=article&amp;item=windows_ubuntu_pow&amp;num=1">here</a>). So I looked for a way to improve my battery life.</p>
+
+<h2 id="down-with-the-power-consumption">Down with the power consumption!</h2>
+
+<p>While I was google-ing I found this post (<a href="http://linuxundich.de/de/ubuntu/stromverbrauch-laptop-sandy-bridge-ubuntu-oneiric-11-10-reduzieren">Linuxundich.de</a>, German) in which the author suggested to use the &ldquo;i915.i915_enable_rc6=1&rdquo;-Kernel parameter (if you have a sandy bridge chipset). Based on his suggestions I made my own test cases and logged everything with a script.</p>
+
+<p>I looked for some different Kernel-parameter setups to test and decided to test the default kernel parameter, the recommended kernel parameters and not reccommended but suggested kernel parameters:</p>
+
+<pre><code>1) quiet splash
+2) quiet splash pcie_aspm=force acpi=noirq i915.i915_enable_rc6=1
+3) quiet splash pcie_aspm=force acpi=noirq i915.i915_enable_rc6=1 i915.i915_enable_fbc=1 i915.lvds_downclock=1
+</code></pre>
+
+<h2 id="a-test">A test</h2>
+
+<p>My target was to read the current power consumption from the battery every five seconds and save this in a file for later analysis. Here is my test setup: (<a href="/images/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/test_setup.txt">test_setup</a>) It&rsquo;s my typical college idle setup. Thunderbird, dropbox, Firefox with facebook and so on.</p>
+
+<h2 id="scripting-and-gnuplot">Scripting and gnuplot</h2>
+
+<p>With my script (it&rsquo;s here <a href="/images/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/battery_log.txt">battery_log</a>) I was able to read the current consumption and write it in a file. Afterwards the script generated a chart with the command line tool gnuplot (<a href="/posts/2012-02-17-visualizing-data-with-gnuplot">here my article about gnuplot</a>). The chart looked like this:</p>
+
+<p><a href="/images/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/battery_log-2012.02.17-21-39_quiet-splash.png"><img src="/images/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/battery_log-2012.02.17-21-39_quiet-splash-300x225.png" alt="" />
+</a></p>
+
+<p>After the third graph I created another one, based on the three logfiles for comparison. (The source files and gnuplot commandfiles are at the bottom, in a zip file).</p>
+
+<p>The new combined graph looked very interesting, because you could see the difference between the three parameters clearly:</p>
+
+<p><a href="/images/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/battery_log_combined.png"><img src="/images/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/battery_log_combined-300x225.png" alt="" />
+</a></p>
+
+<p>By default my laptop used around 13 Watt with backlight lit and around 11 Watt when backlight is off. With the new Kernel-Parameter the usage went down to around 9 Watt with backlight and 7,5 without. So, It&rsquo;d be clever to use one of the kernel-parameter sets. But which one?</p>
+
+<h2 id="who-is-the-fairest-of-them-all">Who is the fairest of them all?</h2>
+
+<p>You can easily distinguish the two sets, by their middlevalue and amplitudes: The green line is a little bit higher than the red one on average but the red one has higher amplitudes&hellip; So which on used the least amount of energy? With which set does my battery last the longest?</p>
+
+<p>To answer that question I modificated my script (see in the zip files) and read the remaining battery capacity every 5 seconds till the laptop shut down because of low energy. I did this again three times, one for every set of parameters with the same test_setup as above (obiviously the laptop was loaded every time before the test).</p>
+
+<p>Again a made a graph:</p>
+
+<p><a href="/images/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/battery_capacity_log.png"><img src="/images/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/battery_capacity_log-300x225.png" alt="" />
+</a></p>
+
+<h2 id="battery-life-with-different-set-of-kernel-parameter">Battery life with different set of kernel-parameter:</h2>
+
+<p>1) 3 hours, ten minutes (100 %)
+2) 5 hours (158 %)
+3) 5 hours, ten minutes (163 %)</p>
+
+<h2 id="conclusion">Conclusion:</h2>
+
+<p>I will use the set 3) because of the bonus battery life. In the aforementioned post the authos spoke about grafic-glitches, but they didn&rsquo;t happen to me so everything is fine. I would suggest that everyone with a sandy bridge chipset at least give it a try.</p>
+
+<h2 id="links">Links:</h2>
+
+<p><a href="/images/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/battery_capacity_log.zip">battery_capacity_log</a>, <a href="/images/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/battery_log.zip">battery_log</a> (all my files from the test)
+<a href="http://linuxundich.de/de/ubuntu/stromverbrauch-laptop-sandy-bridge-ubuntu-oneiric-11-10-reduzieren/">linuxundich.de</a> (gave me teh initial idea)
+<a href="http://www.williambrownstreet.net/blog/?p=387">williambrownstreet.net</a> (some additional information)
+<a href="http://stackoverflow.com/questions/7128911/how-do-i-read-and-interpret-proc-acpi-battery-in-a-java-program">stackoverflow.com</a> (how to intepret the battery file in linux)</p>
+
+  </section>
+  <div class="clearfix">
+    
+      <div class="post-date pull-left">
+        <span class="small">
+          Posted on
+          Feb 24, 2012 at 17:43
+        </span>
+      </div>
+    
+    <div class="pull-right">
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/energy/">#Energy</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/gnuplot/">#Gnuplot</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/kernel/">#Kernel</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/lenovo/">#Lenovo</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/lenovo-ideapad-z370/">#Lenovo Ideapad Z370</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/linux/">#Linux</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/power/">#Power</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/sandy-bridge/">#Sandy Bridge</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/ubuntu/">#Ubuntu</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/watt/">#Watt</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/z370/">#Z370</a></span>
+        
+      
+    </div>
+  </div>
+  <footer>
+    
+      
+    
+    
+    <div class="delimiter"></div>
+    <div class="pager-container">
+      
+        <a class="btn btn-primary btn-older-posts" href="http://example.org/posts/2012-02-17-visualizing-data-with-gnuplot/">
+          <div>
+            <span aria-hidden="true">&larr;</span> Older Posts
+          </div>
+        </a>
+      
+      
+        <a class="btn btn-primary btn-newer-posts" href="http://example.org/posts/2012-02-24-the-desert-spear-peter-v-brett/">
+          <div>
+            Newer Posts <span aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+      
+    </div>
+  </footer>
+</article>
+<div class="delimiter"></div>
+
+  </main>
+  <footer class="container global-footer">
+    <div class="copyright-note pull-left">
+      
+    </div>
+    <div class="sns-links hidden-print">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  
+  
+  
+  
+</body>
+</html>
+

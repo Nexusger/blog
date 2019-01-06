@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Report on Stuff</title>
+    <link>http://example.org/tags/report/</link>
+    <description>Recent content in Report on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Feb 2016 18:54:38 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/report/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Didaktics of media: Learning unit four - Report</title>
+      <link>http://example.org/posts/2016-02-07-didaktics-of-media-learning-unit-four-report/</link>
+      <pubDate>Sun, 07 Feb 2016 18:54:38 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-02-07-didaktics-of-media-learning-unit-four-report/</guid>
+      <description>This blog post is one part of the series “learning diary” for a course at my university.
+Goal of this report is to take and rate a online learning unit. For the fourth and final learning unit we should take a mobile learning unit. I used the app Learning Japanese (Google Play Store) for my mobile phone. As an experiment we have been asked to create a video for the review: https://youtu.</description>
+    </item>
+    
+  </channel>
+</rss>

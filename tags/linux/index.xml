@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Stuff</title>
+    <link>http://example.org/tags/linux/</link>
+    <description>Recent content in Linux on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Oct 2012 21:45:21 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting up Wifi on Ubuntu 12.04 Server via command line (yeah, finally some technical stuff )</title>
+      <link>http://example.org/posts/2012-10-22-setting-up-wifi-on-ubuntu-12-04-server-via-command-line-yeah-finally-some-technical-stuff/</link>
+      <pubDate>Mon, 22 Oct 2012 21:45:21 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-22-setting-up-wifi-on-ubuntu-12-04-server-via-command-line-yeah-finally-some-technical-stuff/</guid>
+      <description>Problem: Setting up a wireless adapter on Ubuntu server 12.04 LTS via CLI isn&amp;rsquo;t THAT easy. Plug&amp;rsquo;n&amp;rsquo;Play doesn&amp;rsquo;t simply work. Good thing there is Google. And a lot of helpful sites.
+Target: Insert the stick (or boot with it) and connect automaticly to the preferred network
+This is not a tutorial. And it&amp;rsquo;s realy not for the uninitiated. It&amp;rsquo;s more like a short reminder for me, or people who have a basic idea what&amp;rsquo;s happening here&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Improve energy consumption with Ubuntu and Lenovo IdeaPad Z370 (sandy bridge-chipset)</title>
+      <link>http://example.org/posts/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/</link>
+      <pubDate>Fri, 24 Feb 2012 17:43:53 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/</guid>
+      <description>Update 2015-03-15: As Antiplex mentioned in the comments, the resources are slighlty out of date. An update is pending
+I use my laptop (Lenovo Z370, with Ubuntu 11.10) a lot in the college. Unfortunatly there aren&amp;rsquo;t enough plugs in the wall for all students and I&amp;rsquo;m not willing to bring a plug board with me every time. So my approach to the problem was to improve the energy consumption of my laptop.</description>
+    </item>
+    
+    <item>
+      <title>KSH the second</title>
+      <link>http://example.org/posts/2012-02-17-ksh-the-second/</link>
+      <pubDate>Fri, 17 Feb 2012 16:37:24 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-17-ksh-the-second/</guid>
+      <description>Woe unto me! Earlier this day I debugged a korn shell script and were not able to find the culprit. With debugging mode
+set -x  I was able to identify, that one of my variables were actualy not recognized as such. After a little bit of tearing my hair out I finaly found the little scallywag:
+I had inserted an unnecessary space between the variable name and the equal-sign. Therefore the interpreter didn&amp;rsquo;t understand what I wanted him to do.</description>
+    </item>
+    
+    <item>
+      <title>KSH basics</title>
+      <link>http://example.org/posts/2012-02-16-ksh-basics/</link>
+      <pubDate>Thu, 16 Feb 2012 22:19:40 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-16-ksh-basics/</guid>
+      <description>Just for the guys who keep forgetting about the simplest commands in korn shell (like me&amp;hellip;) www.well.ox.ac.uk/~johnb/comp/unix/ksh.html</description>
+    </item>
+    
+    <item>
+      <title>Backspace in Firefox and Linux</title>
+      <link>http://example.org/posts/2011-11-16-backspace-in-firefox-and-linux/</link>
+      <pubDate>Wed, 16 Nov 2011 08:21:13 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2011-11-16-backspace-in-firefox-and-linux/</guid>
+      <description>Anyone who is used to firefox under windows (and probably mac) is also used to the backspace key. under windows, firefox will go one page backwards if you hit backspace.
+Under Linux if you hit backspace, there happens&amp;hellip; nothing. Which is disgusting.
+I found a website (german) which describes how to change the behavior:
+ Type in your adress bar: &amp;ldquo;about:config&amp;rdquo; Confirm the warning:  Search for &amp;ldquo;Backspace&amp;rdquo;:  Alter &amp;ldquo;browser.</description>
+    </item>
+    
+  </channel>
+</rss>

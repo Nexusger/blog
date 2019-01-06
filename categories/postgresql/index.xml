@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Postgresql on Stuff</title>
+    <link>http://example.org/categories/postgresql/</link>
+    <description>Recent content in Postgresql on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Oct 2015 11:00:47 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Elixir, postgres and chocolatey</title>
+      <link>http://example.org/posts/2015-10-30-elixir-postgres-and-chocolatey/</link>
+      <pubDate>Fri, 30 Oct 2015 11:00:47 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-10-30-elixir-postgres-and-chocolatey/</guid>
+      <description>You try to use the phoenix getting started guide on windows and the task &amp;ldquo;mix ecto.create&amp;rdquo; fails with an useless error? Chances are your postgresql database isn&amp;rsquo;t available with the ecto default credentials &amp;ldquo;postgres&amp;rdquo;:&amp;ldquo;postgres&amp;rdquo;. Try to logon to the database with the credentials &amp;ldquo;postgres&amp;rdquo;:&amp;ldquo;Postgres1234&amp;rdquo; and change the password for the user to &amp;ldquo;postgres&amp;rdquo;. Also, don&amp;rsquo;t forget to change the password of the Windows user &amp;ldquo;postgres&amp;rdquo;.
+Update 15.11.2015: You also have to change the logon information for the service, otherwise postgresql won&amp;rsquo;t start after an restart.</description>
+    </item>
+    
+    <item>
+      <title>postgreSQL - Dynamic SQL in trigger-functions for table audit</title>
+      <link>http://example.org/posts/2012-02-05-postgresql-dynamic-sql-in-trigger-functions-for-table-audit/</link>
+      <pubDate>Sun, 05 Feb 2012 20:34:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-05-postgresql-dynamic-sql-in-trigger-functions-for-table-audit/</guid>
+      <description>The problem For a college project I tried to create a pl/pgsql trigger function, which should be invoked by a trigger and then saves the unaltered dataset to an audit table. This task alone is no rocket science and therefore boring. I would have to create a trigger, a trigger function and a log table per auditing table and call the function on ervery update or delete.
+Instead I aimed for this solution:</description>
+    </item>
+    
+  </channel>
+</rss>

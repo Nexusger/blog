@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test on Stuff</title>
+    <link>http://example.org/tags/test/</link>
+    <description>Recent content in Test on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Jan 2016 10:56:14 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ZLocation</title>
+      <link>http://example.org/posts/2016-01-20-zlocation/</link>
+      <pubDate>Wed, 20 Jan 2016 10:56:14 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-20-zlocation/</guid>
+      <description>ZLocation (&amp;ldquo;A cd that learns&amp;rdquo;) is a PowerShell module for better navigating through folders.
+I used the predecessor for a while and was fed up with corrupted database entries. I&amp;rsquo;ll test ZLocation thorough-fully but try it for your self!</description>
+    </item>
+    
+  </channel>
+</rss>

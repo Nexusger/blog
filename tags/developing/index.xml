@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developing on Stuff</title>
+    <link>http://example.org/tags/developing/</link>
+    <description>Recent content in Developing on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Jul 2015 21:23:05 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/developing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Elixir on windows</title>
+      <link>http://example.org/posts/2015-07-03-elixir-on-windows/</link>
+      <pubDate>Fri, 03 Jul 2015 21:23:05 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-07-03-elixir-on-windows/</guid>
+      <description>Lately I got interested in the programming language Elixir. I have not yet done anything besides the very first parts of the tutorial and the fantastic introduction from José Valim. It looks fun and very capable, even if I have to think around the corner (Elixir is functional and I&amp;rsquo;m more used to the object oriented programming paradigma)
+After reading some parts of the tutorial on my daily commute to work, I was exited to start.</description>
+    </item>
+    
+  </channel>
+</rss>

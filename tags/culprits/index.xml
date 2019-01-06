@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Culprits on Stuff</title>
+    <link>http://example.org/tags/culprits/</link>
+    <description>Recent content in Culprits on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Oct 2012 21:45:21 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/culprits/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting up Wifi on Ubuntu 12.04 Server via command line (yeah, finally some technical stuff )</title>
+      <link>http://example.org/posts/2012-10-22-setting-up-wifi-on-ubuntu-12-04-server-via-command-line-yeah-finally-some-technical-stuff/</link>
+      <pubDate>Mon, 22 Oct 2012 21:45:21 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-22-setting-up-wifi-on-ubuntu-12-04-server-via-command-line-yeah-finally-some-technical-stuff/</guid>
+      <description>Problem: Setting up a wireless adapter on Ubuntu server 12.04 LTS via CLI isn&amp;rsquo;t THAT easy. Plug&amp;rsquo;n&amp;rsquo;Play doesn&amp;rsquo;t simply work. Good thing there is Google. And a lot of helpful sites.
+Target: Insert the stick (or boot with it) and connect automaticly to the preferred network
+This is not a tutorial. And it&amp;rsquo;s realy not for the uninitiated. It&amp;rsquo;s more like a short reminder for me, or people who have a basic idea what&amp;rsquo;s happening here&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Oh noez, Hackerz!!!!</title>
+      <link>http://example.org/posts/2012-04-06-oh-noez-hackerz/</link>
+      <pubDate>Fri, 06 Apr 2012 14:22:59 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-04-06-oh-noez-hackerz/</guid>
+      <description>Today I detected that one of my sites was hacked. Some punks got access to one of my webservers, added some files and altered some other files. Lucky me, on this webserver is php forbidden and they couldn&amp;rsquo;t do any harm.
+But from the start:
+I host the website for one of the local sport clubs. The website is static, showing only some pics, contact and legal stuff. Once a year there I make a short report how the website is doing and what I&amp;rsquo;ve done.</description>
+    </item>
+    
+    <item>
+      <title>KSH the second</title>
+      <link>http://example.org/posts/2012-02-17-ksh-the-second/</link>
+      <pubDate>Fri, 17 Feb 2012 16:37:24 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-17-ksh-the-second/</guid>
+      <description>Woe unto me! Earlier this day I debugged a korn shell script and were not able to find the culprit. With debugging mode
+set -x  I was able to identify, that one of my variables were actualy not recognized as such. After a little bit of tearing my hair out I finaly found the little scallywag:
+I had inserted an unnecessary space between the variable name and the equal-sign. Therefore the interpreter didn&amp;rsquo;t understand what I wanted him to do.</description>
+    </item>
+    
+  </channel>
+</rss>

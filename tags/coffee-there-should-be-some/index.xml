@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coffee There Should Be Some on Stuff</title>
+    <link>http://example.org/tags/coffee-there-should-be-some/</link>
+    <description>Recent content in Coffee There Should Be Some on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Jan 2016 16:53:59 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/coffee-there-should-be-some/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Elixir for aspiring Erlang developers</title>
+      <link>http://example.org/posts/2016-01-19-elixir-for-aspiring-erlang-developers/</link>
+      <pubDate>Tue, 19 Jan 2016 16:53:59 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-19-elixir-for-aspiring-erlang-developers/</guid>
+      <description>For the &amp;ldquo;Independent Coursework&amp;rdquo; of the University of Applied Sciences Berlin I created the following presentation:
+**Elixir for aspiring Erlang developers ** from Torben Dohrn
+Target audience are students of the bachelors degree Computer Science of the University.
+If anything is unclear (or god forbid, wrong) drop me a mail or a tweet</description>
+    </item>
+    
+    <item>
+      <title>Windows 7 - HowTo change system HDD to SSD (With built in tools only)</title>
+      <link>http://example.org/posts/2012-11-16-windows-7-howto-change-system-hdd-to-ssd-with-built-in-tools-only/</link>
+      <pubDate>Fri, 16 Nov 2012 23:19:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-11-16-windows-7-howto-change-system-hdd-to-ssd-with-built-in-tools-only/</guid>
+      <description>Ingredients:  Current Laptop or PC New SSD External Harddisk (for backup, so it&amp;rsquo;d better be fast and big) One empty DVD (or the recovery disc) Bunch of screwdrivers  Abstract:  Shrink your HDD partition to a size smaller than the SSD (*) Create a recovery disk Create a system image with Windows backup on the external Harddisk Replace your HDD with the shiny new SSD Boot with recovery disk Choose to restore from a system backup  (*) The first part is realy important.</description>
+    </item>
+    
+    <item>
+      <title>... and now for something completely different</title>
+      <link>http://example.org/posts/2012-02-02-and-now-for-something-completely-different/</link>
+      <pubDate>Thu, 02 Feb 2012 20:59:49 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-02-and-now-for-something-completely-different/</guid>
+      <description>recently a good friend of mine started to blog. He was so kind to refer to my blog, so will I. Stefan writes about his daily life, professional Java development and tools and coffee. The last part might be exaggerated, but he should write about coffee. Everyone should.
+So please have a look: aza-net.blogspot.com</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Versus on Stuff</title>
+    <link>http://example.org/tags/versus/</link>
+    <description>Recent content in Versus on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Oct 2012 22:00:08 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/versus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kick Ass - Comic vs. Movie</title>
+      <link>http://example.org/posts/2012-10-03-kick-ass-comic-vs-movie/</link>
+      <pubDate>Wed, 03 Oct 2012 22:00:08 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-03-kick-ass-comic-vs-movie/</guid>
+      <description>Whoohoo I loved Kick Ass The movie, but now that I&amp;rsquo;ve read the underlaying comic, I think a little bit different about the movie. At least in the story there are major changes
+The movie is, for it self, very entertaining. The cast of the movie was well done and consistent. I think the actors matched the characters and especialy that Hit Girl was a good cast. The soundtrackis entertaining and the track &amp;ldquo;stand up&amp;rdquo; from &amp;ldquo;the prodigy&amp;rdquo; is at least for me inseparably associated with this movie.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gnuplot on Stuff</title>
+    <link>http://example.org/tags/gnuplot/</link>
+    <description>Recent content in Gnuplot on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Feb 2012 17:43:53 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/gnuplot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Improve energy consumption with Ubuntu and Lenovo IdeaPad Z370 (sandy bridge-chipset)</title>
+      <link>http://example.org/posts/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/</link>
+      <pubDate>Fri, 24 Feb 2012 17:43:53 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/</guid>
+      <description>Update 2015-03-15: As Antiplex mentioned in the comments, the resources are slighlty out of date. An update is pending
+I use my laptop (Lenovo Z370, with Ubuntu 11.10) a lot in the college. Unfortunatly there aren&amp;rsquo;t enough plugs in the wall for all students and I&amp;rsquo;m not willing to bring a plug board with me every time. So my approach to the problem was to improve the energy consumption of my laptop.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing data with Gnuplot</title>
+      <link>http://example.org/posts/2012-02-17-visualizing-data-with-gnuplot/</link>
+      <pubDate>Fri, 17 Feb 2012 20:52:51 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-17-visualizing-data-with-gnuplot/</guid>
+      <description>On my pursuade for a tool to visualize simple list values I found gnuplot:
+from Wikipedia:
+ gnuplot is a command-line program that can generate two- and three-dimensional plots of functions, data, and data fits.
+ I will focus on the capabilities of gnuplot on two-dimensional plots and in special howto visualize data without a corresponding second data value. But first here is the idea why I needed such a tool:</description>
+    </item>
+    
+  </channel>
+</rss>

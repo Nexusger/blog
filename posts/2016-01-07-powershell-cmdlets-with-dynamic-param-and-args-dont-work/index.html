@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" Powershell cmdlets with dynamic param AND $args don&#39;t work &middot;  Stuff" />
+  
+  <meta property="og:site_name" content="Stuff" />
+  <meta property="og:url" content="http://example.org/posts/2016-01-07-powershell-cmdlets-with-dynamic-param-and-args-dont-work/" />
+  
+  
+    <meta property="og:type" content="article" />
+    
+    <meta property="og:article:published_time" content="2016-01-07T10:11:44Z" />
+    
+      <meta property="og:article:tag" content="dynamicParam" />
+    
+      <meta property="og:article:tag" content="elixir" />
+    
+      <meta property="og:article:tag" content="GitHub" />
+    
+      <meta property="og:article:tag" content="mix" />
+    
+      <meta property="og:article:tag" content="OpenSource" />
+    
+      <meta property="og:article:tag" content="powershell" />
+    
+      <meta property="og:article:tag" content="validateSet" />
+    
+  
+
+  <title>
+     Powershell cmdlets with dynamic param AND $args don&#39;t work &middot;  Stuff
+  </title>
+
+  <link rel="alternative stylesheet" href="http://example.org/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/main.css" />
+  <link rel="stylesheet" href="http://example.org/css/github.css" />
+  <link rel="stylesheet" href="http://example.org/css/color-theme.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  <link rel="shortcut icon" href="http://example.org/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://example.org/images/apple-touch-icon.png" />
+
+  
+
+  
+
+  
+</head>
+<body>
+  
+  <header class="global-header"  style="background-image:url(http://example.org/images/bg.jpg)">
+  
+    <section class="header-text">
+      <h1><a href="http://example.org/">Stuff</a></h1>
+      
+      
+        <a class="btn btn-default btn-home" href="http://example.org/">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          &nbsp;Home
+        </a>
+      
+      
+      <div class="navbar-container">
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/me">
+            About me
+          </a>
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/imprint">
+            Imprint
+          </a>
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+
+<article>
+  <header class="article-title">
+    <h1 class="text-primary">Powershell cmdlets with dynamic param AND $args don&#39;t work</h1>
+  </header>
+  <div class="delimiter"></div>
+  <section>
+    
+
+<p>Over the weekend I tried to implement auto completion in Elixir&rsquo;s mix (in Windows). Unfortunately I didn&rsquo;t make it without introducing some problems. So I didn&rsquo;t committed my changes to upstream. Currently I try to reach some of the more renowned Elixir/Windows contributors, to discuss the changes .</p>
+
+<h1 id="motivation">Motivation</h1>
+
+<p>Under normal circumstances I don&rsquo;t use more mix tasks then test, phoenix.server and release but sometimes you need this weird command, you just can&rsquo;t remember. The command mix help  is your friend here as it shows you all available commands (project aware!). Yet I don&rsquo;t like to look the documentation up, if I need just some information on spelling. For example in the beginning I often tried to start the phoenix project with mix phoenix.start (Hint: that does not work). I am used to auto completion in my development environments so I tried to extend mix  as well.</p>
+
+<h1 id="background">Background</h1>
+
+<p>As I am using the Powershell for all my command line related tasks and the default file extension of Powershell is ps1, my command mix  execute the mix.ps1  in the Elixir bin folder.</p>
+
+<h1 id="approach">Approach</h1>
+
+<p>Powershell scripts can have auto completion of parameters with an so called [validateSet(&ldquo;Param1&rdquo;,&ldquo;Param2&rdquo;,&hellip;)] , which incorporate all valid parameters. Sadly this is of no help, if we have to hard code the possible values for the parameter. A possible solution to this problem is the usage of a DynamicParam with dynamic validateSet (good resource <a href="https://blogs.technet.microsoft.com/pstips/2014/06/09/dynamic-validateset-in-a-dynamic-parameter/">here</a>). To test my various iterations I wrote down all <a href="/images/2016-01-07-powershell-cmdlets-with-dynamic-param-and-args-dont-work/testcases.txt">test cases</a> (sorry no automated testing yet).</p>
+
+<h1 id="iteration-1">Iteration 1</h1>
+
+<h2 id="changes">Changes</h2>
+
+<p>If you have a look at the original mix  script (<a href="https://github.com/elixir-lang/elixir/blob/master/bin/mix.ps1">here</a>) you can see that the script locates the mix.bat , flattens possible array arguments (is this still needed?) and then execute the mix.bat  with the newly flattened arguments.</p>
+
+<p>The first problem we see here is the usage of the $args array. As <a href="http://stackoverflow.com/users/153982/keith-hill">Keith Hill</a> points out in <a href="http://stackoverflow.com/questions/12326205/accessing-the-args-array-in-powershell#comment-16543787">this SO comment</a> the $args array &ldquo;&hellip; contain any argument that doesn&rsquo;t map to a defined function parameter&hellip;&rdquo;. Which introduces the first problem: The DynamicParam ONLY works for defined function parameters.</p>
+
+<p>I copied the linked resource (again, <a href="https://blogs.technet.microsoft.com/pstips/2014/06/09/dynamic-validateset-in-a-dynamic-parameter/">here</a>) and moved the old script to the process block. Because we are creating a script and not a function the signature of function Test-DynamicValidateSet {&hellip;}  needs to be removed. To generate the validateSet I replaced the line $arrSet = &hellip; with</p>
+
+<pre><code>$mixBatPath = (Get-ChildItem (((Get-ChildItem $MyInvocation.MyCommand.Path).Directory.FullName) + '\mix.bat'))
+$param = 'help', '--names'
+
+$arrSet = $(&amp; $mixBatPath $param[0] $param[1])
+</code></pre>
+
+<p>This populates the $arrSet  with all valid task. I also changed the value of the variable $ParameterName  to &lsquo;Task&rsquo;  and renamed the variable $Path  to $Task</p>
+
+<h2 id="test">Test</h2>
+
+<p>A short test shows, the command mix  does work, the command mix help  does not. Reason for that is, we assign the first value to the parameter $Task .</p>
+
+<h1 id="iteration-2">Iteration 2</h1>
+
+<h2 id="changes-1">Changes</h2>
+
+<p>The call to mix.bat in the last row now get the $Task parameter as well:</p>
+
+<pre><code>&amp; $mixBatPath $Task $newArgs
+</code></pre>
+
+<h2 id="test-1">Test</h2>
+
+<p>mix  works, mixd help  works. Awesome! Lets try auto completion. mix [tab]  &hellip;</p>
+
+<p>This is weird. The auto completion takes it times (this is actually the time mix help &ndash;names  takes to return all valid tasks) yet the auto completion fills in file names from that folder&hellip; To fix that we need to make it clear, that our dynamic parameter is actually the first parameter. So after we set the $ParameterAttribute.Position = 0  (it was 1) we repeat our test.</p>
+
+<p>mix  works, mixd help  works, mix [tab]  works, mix he[tab]  works also. What about arguments to parameters? like mix help &ndash;names ?</p>
+
+<pre><code>mix.ps1: A positional parameter cannot be found that accepts argument &quot;--names&quot;.
+</code></pre>
+
+<p>Damn.</p>
+
+<h1 id="iteration-3">Iteration 3</h1>
+
+<h2 id="changes-2">Changes</h2>
+
+<p>OK, we need positional arguments. Lets add some.</p>
+
+<pre><code>[Parameter(Mandatory=$false, Position=1)]
+[string]$p1,
+[Parameter(Mandatory=$false, Position=2)]
+[string]$p2,
+[Parameter(Mandatory=$false, Position=3)]
+[string]$p3,
+[Parameter(Mandatory=$false, Position=4)]
+[string]$p4,
+[Parameter(Mandatory=$false, Position=5)]
+[string]$p5,
+[Parameter(Mandatory=$false, Position=6)]
+[string]$p6
+</code></pre>
+
+<p>I don&rsquo;t like that approach, because this script will fail on having more than seven parameters (our dynamic and $p1  - $p6 ) with the aforementioned error message.</p>
+
+<p>We also have to forward our new parameters to the mix.bat :</p>
+
+<pre><code>&amp; $mixBatPath $Task $p1 $p2 $p3 $p4 $p5 $p6
+</code></pre>
+
+<p>OK, besides the now unused &ldquo;flatten possible array parameter&rdquo; logic and our &ldquo;it will fail on having eight or more parameters&rdquo; problem, how good are we?</p>
+
+<h2 id="test-2">Test</h2>
+
+<p>All tests in the test cases pass. Yet we have some unfinished problems.</p>
+
+<h1 id="problems-with-this-solution">Problems with this solution</h1>
+
+<ol>
+<li>We can have only a fixed amount of parameters. This is not a big problem (as we can add more parameters in the signature), but this is neither elegant nor good practice.</li>
+<li>We now completely omit the &ldquo;flatten array logic&rdquo;. I have to admit, I&rsquo;m not sure if  this is still needed, so I asked the original contributor of this logic but still wait for response.</li>
+<li>Most of the code was copied from our resource. We clearly added some of our own logic, yet we probably shouldn&rsquo;t use this code without asking for permissions. I asked the author if I could use this snippet and wait for a response.</li>
+<li>Even if I omit the &ldquo;flatten array logic&rdquo; I tripled the Lines Of Code. I don&rsquo;t know if the auto complete feature is worth this much code (read about <a href="http://blogs.msdn.com/b/elee/archive/2009/03/11/source-code-is-a-liability-not-an-asset.aspx">code as a liability here</a>)</li>
+</ol>
+
+<p>As soon as the problem 3 is clarified I will upload the file here. As soon as the other problems are clarified (and/or fixed) I create a pull request in GitHub to upstream the changes.</p>
+
+  </section>
+  <div class="clearfix">
+    
+      <div class="post-date pull-left">
+        <span class="small">
+          Posted on
+          Jan 7, 2016 at 10:11
+        </span>
+      </div>
+    
+    <div class="pull-right">
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/dynamicparam/">#Dynamicparam</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/elixir/">#Elixir</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/github/">#Github</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/mix/">#Mix</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/opensource/">#Opensource</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/powershell/">#Powershell</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/validateset/">#Validateset</a></span>
+        
+      
+    </div>
+  </div>
+  <footer>
+    
+      
+    
+    
+    <div class="delimiter"></div>
+    <div class="pager-container">
+      
+        <a class="btn btn-primary btn-older-posts" href="http://example.org/posts/2016-01-06-didaktics-of-media-designing-moocs/">
+          <div>
+            <span aria-hidden="true">&larr;</span> Older Posts
+          </div>
+        </a>
+      
+      
+        <a class="btn btn-primary btn-newer-posts" href="http://example.org/posts/2016-01-17-didaktics-of-media-learning-unit-three-report/">
+          <div>
+            Newer Posts <span aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+      
+    </div>
+  </footer>
+</article>
+<div class="delimiter"></div>
+
+  </main>
+  <footer class="container global-footer">
+    <div class="copyright-note pull-left">
+      
+    </div>
+    <div class="sns-links hidden-print">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  
+  
+  
+  
+</body>
+</html>
+

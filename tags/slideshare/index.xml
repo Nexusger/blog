@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slideshare on Stuff</title>
+    <link>http://example.org/tags/slideshare/</link>
+    <description>Recent content in Slideshare on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Jan 2016 16:53:59 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/slideshare/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Elixir for aspiring Erlang developers</title>
+      <link>http://example.org/posts/2016-01-19-elixir-for-aspiring-erlang-developers/</link>
+      <pubDate>Tue, 19 Jan 2016 16:53:59 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-19-elixir-for-aspiring-erlang-developers/</guid>
+      <description>For the &amp;ldquo;Independent Coursework&amp;rdquo; of the University of Applied Sciences Berlin I created the following presentation:
+**Elixir for aspiring Erlang developers ** from Torben Dohrn
+Target audience are students of the bachelors degree Computer Science of the University.
+If anything is unclear (or god forbid, wrong) drop me a mail or a tweet</description>
+    </item>
+    
+  </channel>
+</rss>

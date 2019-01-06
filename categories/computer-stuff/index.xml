@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Stuff on Stuff</title>
+    <link>http://example.org/categories/computer-stuff/</link>
+    <description>Recent content in Computer Stuff on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Mar 2017 09:40:44 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/computer-stuff/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dell XPS 13 9360 - Trackpad Issue</title>
+      <link>http://example.org/posts/2017-03-05-dell-xps-13-9360-trackpad-issue/</link>
+      <pubDate>Sun, 05 Mar 2017 09:40:44 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2017-03-05-dell-xps-13-9360-trackpad-issue/</guid>
+      <description>Summary: My Dell XPS 13 9360 laptop has issues with the touchpad. The Dell support site is the pure horror but the Dell support team via Facebook is fast and helpful.
+Long story: Several days ago the trackpad stopped working. It started when I connected a Apple Magic Mouse for more convenient playing. When I disconnected the mouse, I realized that the trackpad stopped working. Thinking the laptop just swallowed up I restarted the system.</description>
+    </item>
+    
+    <item>
+      <title>Travel Laptop</title>
+      <link>http://example.org/posts/2017-03-05-travel-laptop/</link>
+      <pubDate>Sun, 05 Mar 2017 09:00:47 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2017-03-05-travel-laptop/</guid>
+      <description>When we started our tour three month ago, I replaced my trusty Lenovo Thinkpad T520 with a shiny new Dell XPS 13 (9360). The reasons where many fold: As weight and volume are premium while travelling half the weight and less than half the volume is awesome. As I didn&amp;rsquo;t intended to do a lot computer stuff, I settled for a 13 inch screen instead of a 15 inch screen. The other main reason is definitely the battery life.</description>
+    </item>
+    
+    <item>
+      <title>Solved: ImageJ / Fiji error: &#34;IllegalArgumentException: adding a container to a container on a different GraphicsDevice&#34;</title>
+      <link>http://example.org/posts/2016-06-29-solved-imagej-fiji-error-illegalargumentexception-adding-a-container-to-a-container-on-a-different-graphicsdevice/</link>
+      <pubDate>Wed, 29 Jun 2016 10:16:09 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-06-29-solved-imagej-fiji-error-illegalargumentexception-adding-a-container-to-a-container-on-a-different-graphicsdevice/</guid>
+      <description>For my master thesis I am experimenting with ImageJ / Fiji. While working with some image registration algorithms I happend to run in a strange bug I couldn&amp;rsquo;t explain to me:
+(Fiji Is Just) ImageJ 2.0.0-rc-49/1.51c; Java 1.8.0_66 [64-bit]; Windows 10 10.0; 476MB of 9115MB (5%) java.lang.IllegalArgumentException: adding a container to a container on a different GraphicsDevice at java.awt.Component.checkGD(Component.java:1185) at java.awt.Container.addImpl(Container.java:1093) at java.awt.Container.add(Container.java:417) at ij.gui.ImageWindow.add(ImageWindow.java:516) at ij.gui.ImageWindow.&amp;lt;init&amp;gt;(ImageWindow.java:88) at ij.gui.StackWindow.&amp;lt;init&amp;gt;(StackWindow.java:28) at ij.</description>
+    </item>
+    
+    <item>
+      <title>ZLocation</title>
+      <link>http://example.org/posts/2016-01-20-zlocation/</link>
+      <pubDate>Wed, 20 Jan 2016 10:56:14 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-20-zlocation/</guid>
+      <description>ZLocation (&amp;ldquo;A cd that learns&amp;rdquo;) is a PowerShell module for better navigating through folders.
+I used the predecessor for a while and was fed up with corrupted database entries. I&amp;rsquo;ll test ZLocation thorough-fully but try it for your self!</description>
+    </item>
+    
+    <item>
+      <title>Elixir for aspiring Erlang developers</title>
+      <link>http://example.org/posts/2016-01-19-elixir-for-aspiring-erlang-developers/</link>
+      <pubDate>Tue, 19 Jan 2016 16:53:59 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-19-elixir-for-aspiring-erlang-developers/</guid>
+      <description>For the &amp;ldquo;Independent Coursework&amp;rdquo; of the University of Applied Sciences Berlin I created the following presentation:
+**Elixir for aspiring Erlang developers ** from Torben Dohrn
+Target audience are students of the bachelors degree Computer Science of the University.
+If anything is unclear (or god forbid, wrong) drop me a mail or a tweet</description>
+    </item>
+    
+    <item>
+      <title>Powershell cmdlets with dynamic param AND $args don&#39;t work</title>
+      <link>http://example.org/posts/2016-01-07-powershell-cmdlets-with-dynamic-param-and-args-dont-work/</link>
+      <pubDate>Thu, 07 Jan 2016 10:11:44 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-07-powershell-cmdlets-with-dynamic-param-and-args-dont-work/</guid>
+      <description>Over the weekend I tried to implement auto completion in Elixir&amp;rsquo;s mix (in Windows). Unfortunately I didn&amp;rsquo;t make it without introducing some problems. So I didn&amp;rsquo;t committed my changes to upstream. Currently I try to reach some of the more renowned Elixir/Windows contributors, to discuss the changes .
+Motivation Under normal circumstances I don&amp;rsquo;t use more mix tasks then test, phoenix.server and release but sometimes you need this weird command, you just can&amp;rsquo;t remember.</description>
+    </item>
+    
+    <item>
+      <title>Elixir, Phoenix and Windows: Some insights on my 1000┬Ás problem</title>
+      <link>http://example.org/posts/2016-01-03-elixir-phoenix-and-windows-some-insights-on-my-1000-problem/</link>
+      <pubDate>Sun, 03 Jan 2016 18:30:03 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-03-elixir-phoenix-and-windows-some-insights-on-my-1000-problem/</guid>
+      <description>On Saturday I wrote about &amp;ldquo;Elixir, Phoenix and Windows: No faster responses than 1000 microseconds?&amp;rdquo;. I described two problems I had with Phoenix in Windows: My response times seem to be stuck at 1000 microseconds and Powershell couldn&amp;rsquo;t display the μ sign. I dug into some code and the mailing lists and found (with a lot of help) some answers.
+1000 Microseconds on Windows? The response times in Phoenix are often measured in Microseconds.</description>
+    </item>
+    
+    <item>
+      <title>Elixir, Phoenix and Windows: No faster responses than 1000 microseconds?</title>
+      <link>http://example.org/posts/2016-01-02-elixir-phoenix-and-windows-no-faster-responses-than-1000-microseconds/</link>
+      <pubDate>Sat, 02 Jan 2016 17:24:56 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-02-elixir-phoenix-and-windows-no-faster-responses-than-1000-microseconds/</guid>
+      <description>If you read around phoenix developers you often hear stuff like &amp;ldquo;Awesome, requests served in under xxx microseconds!&amp;rdquo;. Yet if I try the Phoenix framework, I only have this results:
+[info] GET / [debug] Processing by GettingStartedPheonix.PageController.index/2 Parameters: %{} Pipelines: [:browser] [info] Sent 200 in 1000┬Ás [info] JOIN rooms:lobby to GettingStartedPheonix.RoomChannel Transport: Phoenix.Transports.WebSocket Parameters: %{} [info] Replied rooms:lobby :ok  With special emphasis on [info] Sent 200 in 1000┬Ás .</description>
+    </item>
+    
+    <item>
+      <title>Elixir on Raspberry Pi 2 (using Windows)</title>
+      <link>http://example.org/posts/2015-12-20-elixir-on-raspberry-pi-2-using-windows/</link>
+      <pubDate>Sun, 20 Dec 2015 21:05:41 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-12-20-elixir-on-raspberry-pi-2-using-windows/</guid>
+      <description>Goal Deploy an example Elixir application with the Nerves-Project to a Raspberry Pi 2, using an Ubuntu guest in VMware Player on a Windows host.
+Synopsis We are using the Nerves-project, buildroot and Ubuntu in a virtual machine to create a SD-Image, which contains the default application, blinky.
+Motivation After seeing this talk from Garth Hitchens on Embedded Elixir in Action I wanted to try the Nerves project to deploy an Elixir application to my Raspberry Pi 2.</description>
+    </item>
+    
+    <item>
+      <title>Atom.io now works on German keyboards!</title>
+      <link>http://example.org/posts/2015-12-19-atom-io-now-works-on-german-keyboards/</link>
+      <pubDate>Sat, 19 Dec 2015 12:00:31 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-12-19-atom-io-now-works-on-german-keyboards/</guid>
+      <description>Summary: If you have problems with non us-keyboards and the editor Atom.io install this package: keyboard-localization
+Shortly longer: Ok, I blogged about my problems with Atom.io before (and before) and the underlying issues aren&amp;rsquo;t fixed in the chromium parts of Atom.io. Yet there were workarounds: For example I created my own keybinding file, which fixed my most important issue the missing &amp;ldquo;@&amp;rdquo; sign (who is using that, anyway?). Now I needed an working &amp;ldquo;\&amp;rdquo; in my elixir code.</description>
+    </item>
+    
+    <item>
+      <title>My recap of Codemotion 2015 in Berlin</title>
+      <link>http://example.org/posts/2015-11-12-my-recap-of-codemotion-2015-in-berlin/</link>
+      <pubDate>Thu, 12 Nov 2015 14:09:08 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-11-12-my-recap-of-codemotion-2015-in-berlin/</guid>
+      <description>I attended the Codemotion 2015 in Berlin last week and made a overview for my colleagues.
+** Codemotion Berlin 2015 recap ** from Torben Dohrn</description>
+    </item>
+    
+    <item>
+      <title>Python, pandas and json_read with utf-8 encoding</title>
+      <link>http://example.org/posts/2015-11-02-python-pandas-and-json_read-with-utf-8-encoding/</link>
+      <pubDate>Mon, 02 Nov 2015 11:00:49 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-11-02-python-pandas-and-json_read-with-utf-8-encoding/</guid>
+      <description>The pandas library is a fantastic python toolkit to work with data. Recently I needed to read some json files in a pandas dataframe. Usually you can do that easily with the built in method:
+import pandas as pd pd.read_json(&#39;example.json&#39;)  But this method fails, if it encounters utf-8 encoded files. In contrast to the more often used methods _read_table_ and _read_csv_, _read_json_ does not provide an _encoding_ parameter. To work around this you have to import the codecs module and use the _open_ method:</description>
+    </item>
+    
+    <item>
+      <title>Elixir, postgres and chocolatey</title>
+      <link>http://example.org/posts/2015-10-30-elixir-postgres-and-chocolatey/</link>
+      <pubDate>Fri, 30 Oct 2015 11:00:47 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-10-30-elixir-postgres-and-chocolatey/</guid>
+      <description>You try to use the phoenix getting started guide on windows and the task &amp;ldquo;mix ecto.create&amp;rdquo; fails with an useless error? Chances are your postgresql database isn&amp;rsquo;t available with the ecto default credentials &amp;ldquo;postgres&amp;rdquo;:&amp;ldquo;postgres&amp;rdquo;. Try to logon to the database with the credentials &amp;ldquo;postgres&amp;rdquo;:&amp;ldquo;Postgres1234&amp;rdquo; and change the password for the user to &amp;ldquo;postgres&amp;rdquo;. Also, don&amp;rsquo;t forget to change the password of the Windows user &amp;ldquo;postgres&amp;rdquo;.
+Update 15.11.2015: You also have to change the logon information for the service, otherwise postgresql won&amp;rsquo;t start after an restart.</description>
+    </item>
+    
+    <item>
+      <title>Azure Service Fabric SDK setup fails with logman beeing unknown cmdlet</title>
+      <link>http://example.org/posts/2015-10-03-azure-service-fabric-sdk-setup-fails-with-logman-beeing-unknown-cmdlet/</link>
+      <pubDate>Sat, 03 Oct 2015 08:20:57 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-10-03-azure-service-fabric-sdk-setup-fails-with-logman-beeing-unknown-cmdlet/</guid>
+      <description>Recently I looked into microservies. I&amp;rsquo;ve read the excelent book &amp;ldquo;Building Microservices&amp;ldquo; (affiliate link) and tried to combine Microservices with Microsoft. Luckily for me, I was born in exciting times and Microsoft just released anSDK for their new Microservice Framework Service Fabric.
+Unfortunatly I had problem with the installation. Download and installation went well, but on the step Install and start a new cluster I got the error that the cmdlet logman is not known.</description>
+    </item>
+    
+  </channel>
+</rss>

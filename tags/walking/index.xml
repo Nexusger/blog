@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Walking on Stuff</title>
+    <link>http://example.org/tags/walking/</link>
+    <description>Recent content in Walking on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Mar 2015 01:26:49 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/walking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Barcelona, day three: parc de la ciutadella and La Barceloneta</title>
+      <link>http://example.org/posts/2015-03-19-barcelona-day-three-parc-de-la-ciutadella-and-la-barceloneta/</link>
+      <pubDate>Thu, 19 Mar 2015 01:26:49 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2015-03-19-barcelona-day-three-parc-de-la-ciutadella-and-la-barceloneta/</guid>
+      <description>Our third day in Barcelona started with Bauernfrühstück. We had some cooked potatoes left and added some eggs, bacon and onions for a delicious meal. After the breakfast we headed for the parc de la ciutadella saw the font de la cascada, an imposant monument with (you would never guess) some cascading wells.
+
+The park is nice, mostly populated by joggers, school classes and mammoths. The three buildings which were marked in our map were all unsatisfying.</description>
+    </item>
+    
+  </channel>
+</rss>

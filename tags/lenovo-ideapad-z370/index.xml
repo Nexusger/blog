@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lenovo Ideapad Z370 on Stuff</title>
+    <link>http://example.org/tags/lenovo-ideapad-z370/</link>
+    <description>Recent content in Lenovo Ideapad Z370 on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Feb 2012 17:43:53 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/lenovo-ideapad-z370/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Improve energy consumption with Ubuntu and Lenovo IdeaPad Z370 (sandy bridge-chipset)</title>
+      <link>http://example.org/posts/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/</link>
+      <pubDate>Fri, 24 Feb 2012 17:43:53 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-24-improve-energy-consumption-with-ubuntu-and-lenovo-ideapad-z370-sandy-bridge-chipset/</guid>
+      <description>Update 2015-03-15: As Antiplex mentioned in the comments, the resources are slighlty out of date. An update is pending
+I use my laptop (Lenovo Z370, with Ubuntu 11.10) a lot in the college. Unfortunatly there aren&amp;rsquo;t enough plugs in the wall for all students and I&amp;rsquo;m not willing to bring a plug board with me every time. So my approach to the problem was to improve the energy consumption of my laptop.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 11.10 &#43; Lenovo Ideapad Z370</title>
+      <link>http://example.org/posts/2011-10-20-ubuntu-11-10-lenovo-ideapad-z370/</link>
+      <pubDate>Thu, 20 Oct 2011 10:22:31 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2011-10-20-ubuntu-11-10-lenovo-ideapad-z370/</guid>
+      <description>Two days ago I&amp;rsquo;ve updated Ubuntu to 11.10 and it worked well.
+I started from scratch, so I won&amp;rsquo;t have to deal with &amp;ldquo;old&amp;rdquo; problems:
+Here is my setup:
+ Plain vanilla Lenovo Z370 Harddrive was replaced by a 60 Gb Sata2 SSD Ubuntu 11.10 (Desktop edition) I installed the IdeaPad Driver Package (get it here) to get rid of a lot of the &amp;ldquo;Keycode 240&amp;rdquo;  On the pro side:</description>
+    </item>
+    
+    <item>
+      <title>New task: Get my sd-card reader working...</title>
+      <link>http://example.org/posts/2011-10-03-new-task-get-my-sd-card-reader-working/</link>
+      <pubDate>Mon, 03 Oct 2011 13:03:18 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2011-10-03-new-task-get-my-sd-card-reader-working/</guid>
+      <description>New task of the day: Get my sd-card reader in my laptop working. My Lenovo IdeaPad is nice and everything but sometimes there are some annoying things. Like a not working sd-card reader. There absolut no reaction on Ubuntu if I insert a sd-card&amp;hellip; Maybe, I will find out :-)
+Update: rmmod ehci_hcd doesn&amp;rsquo;t work echo &amp;quot;usb-storage&amp;quot; &amp;gt;&amp;gt; /etc/modules; modprobe usb-storage was promising, but doesn&amp;rsquo;t work either
+What do I know?</description>
+    </item>
+    
+  </channel>
+</rss>

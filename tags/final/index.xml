@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Final on Stuff</title>
+    <link>http://example.org/tags/final/</link>
+    <description>Recent content in Final on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Feb 2016 20:17:13 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/final/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Didaktics of media: Learning Environment – Recap</title>
+      <link>http://example.org/posts/2016-02-16-didaktics-of-media-learning-environment-recap/</link>
+      <pubDate>Tue, 16 Feb 2016 20:17:13 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-02-16-didaktics-of-media-learning-environment-recap/</guid>
+      <description>This will be the last article in this category, as the course nears its end. I will have a short recap on my experience in this course and how it changed my learning behavior. This is the logical follow up to my post Learning Environment: Status Quo.
+Experience in this course This course differs from all my other courses because this is the first course I took outside my &amp;ldquo;normal&amp;rdquo; curriculum.</description>
+    </item>
+    
+  </channel>
+</rss>

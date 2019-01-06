@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Audit on Stuff</title>
+    <link>http://example.org/tags/audit/</link>
+    <description>Recent content in Audit on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Feb 2012 20:34:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/audit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>postgreSQL - Dynamic SQL in trigger-functions for table audit</title>
+      <link>http://example.org/posts/2012-02-05-postgresql-dynamic-sql-in-trigger-functions-for-table-audit/</link>
+      <pubDate>Sun, 05 Feb 2012 20:34:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-05-postgresql-dynamic-sql-in-trigger-functions-for-table-audit/</guid>
+      <description>The problem For a college project I tried to create a pl/pgsql trigger function, which should be invoked by a trigger and then saves the unaltered dataset to an audit table. This task alone is no rocket science and therefore boring. I would have to create a trigger, a trigger function and a log table per auditing table and call the function on ervery update or delete.
+Instead I aimed for this solution:</description>
+    </item>
+    
+  </channel>
+</rss>

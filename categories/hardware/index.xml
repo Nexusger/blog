@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on Stuff</title>
+    <link>http://example.org/categories/hardware/</link>
+    <description>Recent content in Hardware on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Mar 2017 09:40:44 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dell XPS 13 9360 - Trackpad Issue</title>
+      <link>http://example.org/posts/2017-03-05-dell-xps-13-9360-trackpad-issue/</link>
+      <pubDate>Sun, 05 Mar 2017 09:40:44 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2017-03-05-dell-xps-13-9360-trackpad-issue/</guid>
+      <description>Summary: My Dell XPS 13 9360 laptop has issues with the touchpad. The Dell support site is the pure horror but the Dell support team via Facebook is fast and helpful.
+Long story: Several days ago the trackpad stopped working. It started when I connected a Apple Magic Mouse for more convenient playing. When I disconnected the mouse, I realized that the trackpad stopped working. Thinking the laptop just swallowed up I restarted the system.</description>
+    </item>
+    
+  </channel>
+</rss>

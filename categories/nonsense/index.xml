@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nonsense on Stuff</title>
+    <link>http://example.org/categories/nonsense/</link>
+    <description>Recent content in Nonsense on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Sep 2012 20:16:28 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/nonsense/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Egg cartons. A lot of them (47 to be precisely)</title>
+      <link>http://example.org/posts/2012-09-10-egg-cartons-a-lot-of-them-47-to-be-precisely/</link>
+      <pubDate>Mon, 10 Sep 2012 20:16:28 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-09-10-egg-cartons-a-lot-of-them-47-to-be-precisely/</guid>
+      <description>Ever wanted to know how egg cartons would look like, if you stack up enough to contain 352 eggs?
+Me neither. Nonetheless, here are the egg cartons we gathered for our band room:
+
+We gathered so many of them to quieten our band room. But now (after we accumulated so many cartons) we canceled the room, because of a raise of the rent.</description>
+    </item>
+    
+    <item>
+      <title>... and now for something completely different</title>
+      <link>http://example.org/posts/2012-02-02-and-now-for-something-completely-different/</link>
+      <pubDate>Thu, 02 Feb 2012 20:59:49 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2012-02-02-and-now-for-something-completely-different/</guid>
+      <description>recently a good friend of mine started to blog. He was so kind to refer to my blog, so will I. Stefan writes about his daily life, professional Java development and tools and coffee. The last part might be exaggerated, but he should write about coffee. Everyone should.
+So please have a look: aza-net.blogspot.com</description>
+    </item>
+    
+    <item>
+      <title>A blog. Again</title>
+      <link>http://example.org/posts/2011-06-16-a-blog-again/</link>
+      <pubDate>Thu, 16 Jun 2011 20:00:17 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2011-06-16-a-blog-again/</guid>
+      <description>Another day another blog. I won&amp;rsquo;t promise anything, but at least I&amp;rsquo;ll try to write once a while</description>
+    </item>
+    
+  </channel>
+</rss>

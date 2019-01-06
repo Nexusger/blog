@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" Elixir on Raspberry Pi 2 (using Windows) &middot;  Stuff" />
+  
+  <meta property="og:site_name" content="Stuff" />
+  <meta property="og:url" content="http://example.org/posts/2015-12-20-elixir-on-raspberry-pi-2-using-windows/" />
+  
+  
+    <meta property="og:type" content="article" />
+    
+    <meta property="og:article:published_time" content="2015-12-20T21:05:41Z" />
+    
+      <meta property="og:article:tag" content="fixed" />
+    
+      <meta property="og:article:tag" content="tutorial" />
+    
+  
+
+  <title>
+     Elixir on Raspberry Pi 2 (using Windows) &middot;  Stuff
+  </title>
+
+  <link rel="alternative stylesheet" href="http://example.org/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/main.css" />
+  <link rel="stylesheet" href="http://example.org/css/github.css" />
+  <link rel="stylesheet" href="http://example.org/css/color-theme.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  <link rel="shortcut icon" href="http://example.org/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://example.org/images/apple-touch-icon.png" />
+
+  
+
+  
+
+  
+</head>
+<body>
+  
+  <header class="global-header"  style="background-image:url(http://example.org/images/bg.jpg)">
+  
+    <section class="header-text">
+      <h1><a href="http://example.org/">Stuff</a></h1>
+      
+      
+        <a class="btn btn-default btn-home" href="http://example.org/">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          &nbsp;Home
+        </a>
+      
+      
+      <div class="navbar-container">
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/me">
+            About me
+          </a>
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/imprint">
+            Imprint
+          </a>
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+
+<article>
+  <header class="article-title">
+    <h1 class="text-primary">Elixir on Raspberry Pi 2 (using Windows)</h1>
+  </header>
+  <div class="delimiter"></div>
+  <section>
+    
+
+<h1 id="goal">Goal</h1>
+
+<p>Deploy an example <a href="http://elixir-lang.org/">Elixir</a> application with the <a href="http://nerves-project.org/">Nerves-Project</a> to a Raspberry Pi 2, using an Ubuntu guest in VMware Player on a Windows host.</p>
+
+<h1 id="synopsis">Synopsis</h1>
+
+<p>We are using the <a href="http://nerves-project.org/">Nerves-project</a>, <a href="https://buildroot.org/">buildroot</a> and <a href="http://www.ubuntu.com/">Ubuntu </a>in a virtual machine to create a SD-Image, which contains the default application, blinky.</p>
+
+<h1 id="motivation">Motivation</h1>
+
+<p>After seeing <a href="https://www.youtube.com/watch?v=kpzQrFC55q4">this talk</a> from Garth Hitchens on Embedded Elixir in Action I wanted to try the Nerves project to deploy an Elixir application to my Raspberry Pi 2. Yet, as I&rsquo;ve blogged before I&rsquo;m using a Windows machine and most of the build tools (for Raspberry Pi) are using Linux.</p>
+
+<h1 id="prerequisites">Prerequisites</h1>
+
+<p>We will need to install different software to our computer, therefore I assume you have the rights to do so. Also we need disk space (around 15 Gigabytes). Because we are using a virtual machine it does not hurt to have a beefy computer. More RAM+CPU = Better.</p>
+
+<h1 id="steps">Steps</h1>
+
+<p>There are several steps needed to complete our goal, most of them require some Linux usage. Bear with me, we will make it! (Also have a look at <a href="http://www.dummies.com/how-to/content/linux-for-dummies-cheat-sheet.html">Linux for Dummies</a>)</p>
+
+<h2 id="install-vmware-player-10-minutes">Install VMware Player (10 Minutes)</h2>
+
+<p><em>On your Windows Computer do:</em></p>
+
+<p>We will install a Hyper Visor on our computer. A Hyper Visor enables you to have an operating system in your original operating system (without the risk to destroy your computer).</p>
+
+<p>There are several Hyper Visor solution available. On Windows 8 and 10 the Microsoft HyperV software is available (and installed by default, I think?). In general I would go with the defaults, but I <a href="http://www.hanselman.com/blog/SwitchEasilyBetweenVirtualBoxAndHyperVWithABCDEditBootEntryInWindows81.aspx">deactivated HyperV</a> for various reasons in the past (no 3d virtualization being one of the most pressing reasons) and choose <a href="https://my.vmware.com/de/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/12_0">VMware Player</a>.</p>
+
+<p>After installation of VMware player download the <a href="http://releases.ubuntu.com/14.04/">Ubuntu 14.04 (64bit )LTS server image</a> (or the desktop image, I don&rsquo;t care).** So far, 32 WONT WORK!**</p>
+
+<h2 id="create-a-virtual-machine-5-minutes">Create a virtual machine (5 Minutes)</h2>
+
+<p><em>On your Windows Computer do:</em></p>
+
+<p>Start VMware player and hit &ldquo;create a new virtual machine&rdquo;. In the wizard window choose the &ldquo;Installer disc image file (iso)&rdquo; option and select your previously downloaded Ubuntu server image.</p>
+
+<p>Hit next and go along with the defaults* until it finishes.</p>
+
+<ul>
+<li>If you are constrained on the disk size, you can reduce it from 20 Gb to 10Gb. I tried it with 5Gb but failed on downloading all the needed tools.</li>
+</ul>
+
+<h2 id="install-ubuntu-14-04-lts-30-minutes">Install Ubuntu 14.04 LTS (30 Minutes)</h2>
+
+<p><em>In the virtual machine do:</em></p>
+
+<p>Start your virtual machine (green arrow) and go along with the installation defaults. I changed some aspects which I will highlight now:</p>
+
+<pre><code>  * Language: I'm using German as system language and as keyboard layout.
+  * Encrypt File System: I politely declined. I couldn't care less on this build machine. Also this is in theory a minor performance drain.
+  * Packages to install: I checked the OpenSSH box
+</code></pre>
+
+<p>Let the installation finish. It will take some time and ask questions in between instead on the beginning. So have an eye on that. As a side note. Remember username and password. We need it. For convenience use KeePass 2 or similar software.</p>
+
+<h2 id="get-ip-address-1-minute">Get IP Address (1 Minute)</h2>
+
+<p><em>In the virtual machine do:</em></p>
+
+<p>Finally we can log in. For later usage we need the IP address. After you logged in, enter</p>
+
+<pre><code>ifconfig
+</code></pre>
+
+<p>in the terminal. This will bring up the network interface configuration. We need the IP address of the interface eth0. In my case the line looks like</p>
+
+<pre><code>inet Adresse:192.168.62.129 Bcast:192.168.62.255 Maske:255.255.255.0
+</code></pre>
+
+<p>We only need the address: 102.168.62.129 in my case.</p>
+
+<h2 id="install-nerves-10-minutes-45-minutes-of-waiting">Install Nerves (10 Minutes + 45 Minutes of waiting&hellip;)</h2>
+
+<p><em>In the virtual machine do:</em></p>
+
+<p>I installed everything in my home folder, but fell free to do so where ever you like (but remember it later on :-P)</p>
+
+<p>Update your package sources:</p>
+
+<pre><code>sudo apt-get update
+</code></pre>
+
+<p>The following code is provided by the <a href="https://github.com/nerves-project/nerves-system-br">Nerves-Project</a>:</p>
+
+<pre><code>sudo apt-get install git g++ libssl-dev libncurses5-dev bc m4 make unzip
+
+# If your system is 64-bit, also run this
+sudo apt-get install libc6:i386 libstdc++6:i386 zlib1g:i386 gcc-multilib
+
+#Create a caching folder
+mkdir ~/.nerves-cache  # optional
+</code></pre>
+
+<p>At this point the Nerves tutorial could be more on the point. They state &ldquo;&hellip;  Change to the nerves-system-br directory&hellip;&rdquo; yet there is no such folder. To fix this clone the <a href="https://github.com/nerves-project/nerves-system-br">Nerves-project/nerves-system-br</a> project from <a href="https://github.com/">Github</a>!</p>
+
+<pre><code>sudo git clone https://github.com/nerves-project/nerves-system-br.git
+</code></pre>
+
+<p>Now we can change in the nerves-system-br folder:</p>
+
+<pre><code>cd nerves-system-br
+</code></pre>
+
+<p>Now we can follow the tutorial on the nerves-project Github page along again:</p>
+
+<pre><code>make nerves_rpi2_elixir_defconfig
+</code></pre>
+
+<p>And now to kickstart the future &ldquo;real&rdquo; builds: Lets make a dry run to cache all files (this <del>may</del> will take a while):</p>
+
+<pre><code>make
+</code></pre>
+
+<p>This takes around 45 Minutes.</p>
+
+<h2 id="using-nerves-10-minutes">Using Nerves (10 Minutes)</h2>
+
+<p>The tutorial states one has to source the environment. This sets some variables and is needed every time one brings up a new console</p>
+
+<pre><code>cd ~/nerves-system-br
+source ./nerves-env.sh
+</code></pre>
+
+<p>For testing I cloned the blinky example from Github</p>
+
+<pre><code>cd ~
+sudo git clone https://github.com/nerves-project/nerves-examples.git
+</code></pre>
+
+<p>change in the new folder and in the blinky directory</p>
+
+<pre><code>cd nerves-examples/blinky
+</code></pre>
+
+<p>Now the magic can happen:</p>
+
+<pre><code>make
+</code></pre>
+
+<p>This will create a file _images/blinky.fw</p>
+
+<p>*.fw is the file format for <a href="https://github.com/fhunleth/fwup">fwup</a> (don&rsquo;t worry it is already installed). After some research (and lots of help by <a href="https://twitter.com/fhunleth">Frank Hunleth</a> and <a href="https://twitter.com/ghitchens">Garth Hitchens</a> <del>I</del> We figured out the correct command:</p>
+
+<pre><code>fwup -a -i _images/blinky.fw -d _images/blinky.img -t complete
+</code></pre>
+
+<p>Using this command you create we create a Raspberry Pi image file (_images/blinky.img)</p>
+
+<h2 id="get-the-image-5-minutes">Get the image (5 Minutes)</h2>
+
+<p><em>On your Windows Computer do:</em></p>
+
+<p>The resulting image is located in your virtual machine at ~/nerves-examples/blinky/_images/ .</p>
+
+<p>To access that folder we need to download the folder from the virtual machine to your Windows computer. You can access the folder via WinSCP if you opted in for the OpenSSH package before:</p>
+
+<p>Open WinSCP (if installed; otherwise: <a href="https://winscp.net/eng/index.php">Download</a>, <a href="https://chocolatey.org/packages/winscp">Choco Package</a>) and create a new connection. Computer name is the IP address we saved before. Username and password are your credentials from the virtual machine (I told you to remember it!).</p>
+
+<p>You will be presented with two explorer views. The left side is your computer, the right side is the virtual machine, already in the home folder of your user.</p>
+
+<p>If you cloned the nerves-examples.git in the home folder as I suggested, you can easily follow the path. On the right side click through the folders ~/nerves-examples/blinky/_images/ until you find your file, which is called blinky.img. Copy the file to your computer, for example on the Desktop.</p>
+
+<h2 id="burn-the-image-15-minutes">&ldquo;Burn&rdquo; the image (15 Minutes)</h2>
+
+<p><em>On your Windows Computer do:</em></p>
+
+<p>To burn the image we need a tool which creates the file system from our downloaded image. Follow the <a href="https://www.raspberrypi.org/documentation/installation/installing-images/windows.md">tutorial</a> on RaspberryPi.org.</p>
+
+<h2 id="fun-countless-hours">Fun (Countless hours)</h2>
+
+<p><em>On your Raspberry Pi do:</em></p>
+
+<p>Insert the SD-Card in your Raspberry Pi and power it on. Depending on your setup, something should happen! For example the <a href="https://github.com/nerves-project/nerves-examples">blinky</a> example lets you blink the LED, the <a href="https://github.com/nerves-project/nerves-demo">demo example</a> (should, didn&rsquo;t work for me) let you connect via ethernet.</p>
+
+<p><a href="/images/2015-12-20-elixir-on-raspberry-pi-2-using-windows/2015-12-21_20_49_59.gif" title="The fun you can have"><img src="/images/2015-12-20-elixir-on-raspberry-pi-2-using-windows/2015-12-21_20_49_59.gif" alt="The fun you can have" />
+</a></p>
+
+<h1 id="history">History:</h1>
+
+<ul>
+<li>Update 23.12.2015: Added hint for 64bit after <a href="https://twitter.com/mdsebald">@mdsebald</a> mentioned it</li>
+<li>Update 22.12.2015: Fixed the &ldquo;Get the image&rdquo; part</li>
+<li>Update 22.12.2015: Fixed the tutorial</li>
+<li>Update 21.12.2015: Marked the tutorial as broken</li>
+</ul>
+
+  </section>
+  <div class="clearfix">
+    
+      <div class="post-date pull-left">
+        <span class="small">
+          Posted on
+          Dec 20, 2015 at 21:05
+        </span>
+      </div>
+    
+    <div class="pull-right">
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/fixed/">#Fixed</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/tutorial/">#Tutorial</a></span>
+        
+      
+    </div>
+  </div>
+  <footer>
+    
+      
+    
+    
+    <div class="delimiter"></div>
+    <div class="pager-container">
+      
+        <a class="btn btn-primary btn-older-posts" href="http://example.org/posts/2015-12-19-atom-io-now-works-on-german-keyboards/">
+          <div>
+            <span aria-hidden="true">&larr;</span> Older Posts
+          </div>
+        </a>
+      
+      
+        <a class="btn btn-primary btn-newer-posts" href="http://example.org/posts/2015-12-21-elixir-catch-of-the-day-parentheses/">
+          <div>
+            Newer Posts <span aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+      
+    </div>
+  </footer>
+</article>
+<div class="delimiter"></div>
+
+  </main>
+  <footer class="container global-footer">
+    <div class="copyright-note pull-left">
+      
+    </div>
+    <div class="sns-links hidden-print">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  
+  
+  
+  
+</body>
+</html>
+

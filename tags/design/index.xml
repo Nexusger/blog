@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on Stuff</title>
+    <link>http://example.org/tags/design/</link>
+    <description>Recent content in Design on Stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Jan 2016 18:17:08 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Didaktics of media: Learning unit three – Report</title>
+      <link>http://example.org/posts/2016-01-17-didaktics-of-media-learning-unit-three-report/</link>
+      <pubDate>Sun, 17 Jan 2016 18:17:08 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-17-didaktics-of-media-learning-unit-three-report/</guid>
+      <description>This blog post is one part of the series “learning diary” for a course at my university.
+Goal of this report is to take and rate a online learning unit. For the third learning unit we should take either a webinar or a MOOC. I participated in the course Design 1o1 Redux - Part 2: My House from the Iversity platform.
+Short synopsis of the unit: The course “Design 1o1 Redux – Part 2: My House” was the second of three courses on the platform Iversity created by the Design 1o1 Community.</description>
+    </item>
+    
+    <item>
+      <title>Didaktics of media: Designing MOOCs</title>
+      <link>http://example.org/posts/2016-01-06-didaktics-of-media-designing-moocs/</link>
+      <pubDate>Wed, 06 Jan 2016 20:59:50 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-06-didaktics-of-media-designing-moocs/</guid>
+      <description>This blog post is one part of the series &amp;ldquo;learning diary&amp;rdquo; for a course at my university.
+Goals: Based on the title for that unit I assume we will learn something about designing MOOC. The linked article on the other hand, features a paper about the Tech Ed Revolution, which &amp;ldquo;will be the Learner Revolution&amp;rdquo;. It goes on and on about investors needing to put money in education (either traditional education or start ups) and how these start ups could fuel the next learning revolution.</description>
+    </item>
+    
+  </channel>
+</rss>

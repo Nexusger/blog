@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" Elixir, postgres and chocolatey &middot;  Stuff" />
+  
+  <meta property="og:site_name" content="Stuff" />
+  <meta property="og:url" content="http://example.org/posts/2015-10-30-elixir-postgres-and-chocolatey/" />
+  
+  
+    <meta property="og:type" content="article" />
+    
+    <meta property="og:article:published_time" content="2015-10-30T11:00:47Z" />
+    
+      <meta property="og:article:tag" content="ecto" />
+    
+      <meta property="og:article:tag" content="elixir" />
+    
+      <meta property="og:article:tag" content="phoenix" />
+    
+      <meta property="og:article:tag" content="postgresql" />
+    
+      <meta property="og:article:tag" content="powershell" />
+    
+      <meta property="og:article:tag" content="Solved" />
+    
+  
+
+  <title>
+     Elixir, postgres and chocolatey &middot;  Stuff
+  </title>
+
+  <link rel="alternative stylesheet" href="http://example.org/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://example.org/css/main.css" />
+  <link rel="stylesheet" href="http://example.org/css/github.css" />
+  <link rel="stylesheet" href="http://example.org/css/color-theme.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  <link rel="shortcut icon" href="http://example.org/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://example.org/images/apple-touch-icon.png" />
+
+  
+
+  
+
+  
+</head>
+<body>
+  
+  <header class="global-header"  style="background-image:url(http://example.org/images/bg.jpg)">
+  
+    <section class="header-text">
+      <h1><a href="http://example.org/">Stuff</a></h1>
+      
+      
+        <a class="btn btn-default btn-home" href="http://example.org/">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          &nbsp;Home
+        </a>
+      
+      
+      <div class="navbar-container">
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/me">
+            About me
+          </a>
+        
+          <a class="btn btn-default navbar-item" href="http://example.org/imprint">
+            Imprint
+          </a>
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+
+<article>
+  <header class="article-title">
+    <h1 class="text-primary">Elixir, postgres and chocolatey</h1>
+  </header>
+  <div class="delimiter"></div>
+  <section>
+    
+
+<p>You try to use the phoenix getting started guide on windows and the task &ldquo;mix ecto.create&rdquo; fails with an useless error? Chances are your postgresql database isn&rsquo;t available with the ecto default credentials &ldquo;postgres&rdquo;:&ldquo;postgres&rdquo;. Try to logon to the database with the credentials &ldquo;postgres&rdquo;:&ldquo;Postgres1234&rdquo; and change the password for the user to &ldquo;postgres&rdquo;. Also, don&rsquo;t forget to change the password of the Windows user &ldquo;postgres&rdquo;.</p>
+
+<p><strong>Update 15.11.2015:</strong> You also have to change the logon information for the service, otherwise postgresql won&rsquo;t start after an restart.</p>
+
+<h1 id="long-version">Long version</h1>
+
+<p>If you happen to start with <a href="http://elixir-lang.org/">elixir</a> and <a href="http://www.phoenixframework.org/">phoenix </a>you will probably install <a href="http://www.postgresql.org/">postgres </a>at some point. If you also happen to use Windows AND are a user of <a href="https://chocolatey.org/">chocolatey</a> (which you should be!) it could happen that you run in a nasty, not very helpful error message when you try to use the <a href="http://www.phoenixframework.org/docs/up-and-running">phoenix getting started guide</a> on the mix task:</p>
+
+<pre><code>mix ecto.create
+</code></pre>
+
+<p>The error states exactly nothing:</p>
+
+<pre><code>** (ArgumentError) argument error
+    (stdlib) :io.put_chars(:standard_error, :unicode, [[[], &lt;&lt;42, 42, 32, ...&gt;&gt;], 10])
+    (mix) lib/mix/cli.ex:64: Mix.CLI.run_task/2
+    (stdlib) erl_eval.erl:669: :erl_eval.do_apply/6
+    (elixir) lib/code.ex:168: Code.eval_string/3
+</code></pre>
+
+<p>Which is not that helpful. Because of the error message you can&rsquo;t exactly google for that particular error. (I mean, yeah you could look the codepoint up but&hellip; really?)</p>
+
+<p>Because the ecto tasks failed and ecto is the database mapper, I tried to connect to my recently installed postgres database. Which immediately made my mistake clear: ecto expects an user &ldquo;postgres&rdquo; with the password &ldquo;postgres&rdquo; for the database connection. But these credentials didn&rsquo;t work!</p>
+
+<p>I tried to find the default password for postgres (&ldquo;postgres&rdquo; being the only answer I found) but failed after a quick googling. So I uninstalled the postgres package via chocolatey</p>
+
+<pre><code>chocolatey uninstall postgresql
+</code></pre>
+
+<p>from my computer (which unfortunately didn&rsquo;t work&hellip; I deleted the folder afterwards :-/ ) and reinstalled it.</p>
+
+<pre><code>chocolatey install postgresql
+</code></pre>
+
+<p>On the installation log I found the default password afterwards:</p>
+
+<pre><code>Deleting and recreating postgres windows account...
+ Cannot delete user. User postgres doesn't exist. Which is perfectly fine, it will be created in the next step.
+ Removing postgres from Users failed. Please do that manually
+ The account postgres has been created with the password set to Postgres1234. Please change the password for the postgres account and update the services to that password
+</code></pre>
+
+<p>I logged on to the database and changed the password:</p>
+
+<pre><code>alter user postgres with password 'postgres';
+</code></pre>
+
+<p>Afterwards I changed the password for the windows user, &ldquo;postgres&rdquo; created on the installation accordingly.</p>
+
+<p>Now the mix task works as expected.</p>
+
+  </section>
+  <div class="clearfix">
+    
+      <div class="post-date pull-left">
+        <span class="small">
+          Posted on
+          Oct 30, 2015 at 11:00
+        </span>
+      </div>
+    
+    <div class="pull-right">
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/ecto/">#Ecto</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/elixir/">#Elixir</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/phoenix/">#Phoenix</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/postgresql/">#Postgresql</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/powershell/">#Powershell</a></span>
+        
+      
+        
+          <span class="post-tag small"><a href="http://example.org/tags/solved/">#Solved</a></span>
+        
+      
+    </div>
+  </div>
+  <footer>
+    
+      
+    
+    
+    <div class="delimiter"></div>
+    <div class="pager-container">
+      
+        <a class="btn btn-primary btn-older-posts" href="http://example.org/posts/2015-10-29-didaktics-of-media-instruction-planning-target-group-specification/">
+          <div>
+            <span aria-hidden="true">&larr;</span> Older Posts
+          </div>
+        </a>
+      
+      
+        <a class="btn btn-primary btn-newer-posts" href="http://example.org/posts/2015-11-02-python-pandas-and-json_read-with-utf-8-encoding/">
+          <div>
+            Newer Posts <span aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+      
+    </div>
+  </footer>
+</article>
+<div class="delimiter"></div>
+
+  </main>
+  <footer class="container global-footer">
+    <div class="copyright-note pull-left">
+      
+    </div>
+    <div class="sns-links hidden-print">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  
+  
+  
+  
+</body>
+</html>
+
